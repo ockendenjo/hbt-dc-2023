@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const vectorLayer = new VectorLayer({source: vectorSource});
 
     const mapView = new View({maxZoom: 19});
-    mapView.setZoom(15);
+    mapView.setCenter(fromLonLat([-3.18985, 55.95285]));
+    mapView.setZoom(12);
 
     function initialiseMap() {
         const map = new ol.Map({
@@ -140,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
             vectorSource.addFeature(iconFeature);
         });
 
-        mapView.fit(vectorSource.getExtent(), {padding: [20, 20, 20, 20]});
+        // mapView.fit(vectorSource.getExtent(), {padding: [20, 20, 20, 20]});
     }
 
     initialiseMap();
