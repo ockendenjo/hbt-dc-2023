@@ -21,8 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const vectorLayer = new VectorLayer({source: vectorSource});
 
     const mapView = new View({maxZoom: 19});
-    mapView.setZoom(10);
-    mapView.setCenter(fromLonLat([-3.745, 55.8957]));
+    mapView.setZoom(15);
 
     function initialiseMap() {
         const map = new ol.Map({
@@ -117,21 +116,34 @@ document.addEventListener("DOMContentLoaded", () => {
     initialiseMap();
     loadData();
 
-    document.getElementById("select-grid").addEventListener("click", () => {
-        document.getElementById("tab-list").style.display = "none";
-        document.getElementById("tab-map").style.display = "none";
-        document.getElementById("tab-grid").style.display = "";
-    });
+    function setupTabs() {
+        const tabs = [
+            {
+                tab: document.getElementById("select-grid"),
+                contents: document.getElementById("tab-grid"),
+            },
+            {
+                tab: document.getElementById("select-map"),
+                contents: document.getElementById("tab-map"),
+            },
+            {
+                tab: document.getElementById("select-list"),
+                contents: document.getElementById("tab-list"),
+            },
+        ];
 
-    document.getElementById("select-map").addEventListener("click", () => {
-        document.getElementById("tab-list").style.display = "none";
-        document.getElementById("tab-grid").style.display = "none";
-        document.getElementById("tab-map").style.display = "";
-    });
+        tabs.forEach((t) => {
+            const otherTabs = tabs.filter((i) => i !== t);
+            t.tab.addEventListener("click", () => {
+                otherTabs.forEach((ot) => {
+                    ot.contents.style.display = "none";
+                    ot.tab.classList.remove("active");
+                });
+                t.contents.style.display = "";
+                t.tab.classList.add("active");
+            });
+        });
+    }
 
-    document.getElementById("select-list").addEventListener("click", () => {
-        document.getElementById("tab-grid").style.display = "none";
-        document.getElementById("tab-map").style.display = "none";
-        document.getElementById("tab-list").style.display = "";
-    });
+    setupTabs();
 });

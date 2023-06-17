@@ -20,8 +20,8 @@
         },
         {
             "id": 3,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.94951,
+            "lon": -3.18795,
             "x": 0,
             "y": 0,
             "name": "The Advocate",
@@ -29,8 +29,8 @@
         },
         {
             "id": 4,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95016,
+            "lon": -3.18843,
             "x": 0,
             "y": 0,
             "name": "The Albanach",
@@ -38,8 +38,8 @@
         },
         {
             "id": 5,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95200,
+            "lon": -3.20538,
             "x": 0,
             "y": 0,
             "name": "The Alexander Graham Bell",
@@ -47,8 +47,8 @@
         },
         {
             "id": 6,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95179,
+            "lon": -3.20333,
             "x": 0,
             "y": 0,
             "name": "The Amber Rose",
@@ -56,8 +56,8 @@
         },
         {
             "id": 7,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95795,
+            "lon": -3.20620,
             "x": 0,
             "y": 0,
             "name": "The Antiquary",
@@ -65,8 +65,8 @@
         },
         {
             "id": 8,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95051,
+            "lon": -3.18884,
             "x": 0,
             "y": 0,
             "name": "Arcade Bar",
@@ -74,8 +74,8 @@
         },
         {
             "id": 9,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.93821,
+            "lon": -3.19154,
             "x": 0,
             "y": 0,
             "name": "Argyle Bar",
@@ -83,8 +83,8 @@
         },
         {
             "id": 10,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95750,
+            "lon": -3.16943,
             "x": 0,
             "y": 0,
             "name": "Artisan",
@@ -92,8 +92,8 @@
         },
         {
             "id": 11,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.93900,
+            "lon": -3.22367,
             "x": 0,
             "y": 0,
             "name": "Athletics Arms (Diggers)",
@@ -101,8 +101,8 @@
         },
         {
             "id": 12,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.94354,
+            "lon": -3.18015,
             "x": 0,
             "y": 0,
             "name": "Auld Hoose",
@@ -110,8 +110,8 @@
         },
         {
             "id": 13,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95237,
+            "lon": -3.19929,
             "x": 0,
             "y": 0,
             "name": "Auld Hundred",
@@ -119,8 +119,8 @@
         },
         {
             "id": 14,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95752,
+            "lon": -3.20720,
             "x": 0,
             "y": 0,
             "name": "The Bailie",
@@ -128,8 +128,8 @@
         },
         {
             "id": 15,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.94881,
+            "lon": -3.18659,
             "x": 0,
             "y": 0,
             "name": "Bannermans",
@@ -137,8 +137,8 @@
         },
         {
             "id": 16,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.94936,
+            "lon": -3.18681,
             "x": 0,
             "y": 0,
             "name": "The Banshee Labyrinth",
@@ -146,8 +146,8 @@
         },
         {
             "id": 17,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95805,
+            "lon": -3.18919,
             "x": 0,
             "y": 0,
             "name": "Barony Bar",
@@ -155,8 +155,8 @@
         },
         {
             "id": 18,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.94734,
+            "lon": -3.19718,
             "x": 0,
             "y": 0,
             "name": "The Beehive Inn",
@@ -164,8 +164,8 @@
         },
         {
             "id": 19,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95226,
+            "lon": -3.18899,
             "x": 0,
             "y": 0,
             "name": "The Beer House",
@@ -173,8 +173,8 @@
         },
         {
             "id": 20,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95587,
+            "lon": -3.16423,
             "x": 0,
             "y": 0,
             "name": "Bellfield Brewery Tap Room",
@@ -182,8 +182,8 @@
         },
         {
             "id": 21,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.94175,
+            "lon": -3.20333,
             "x": 0,
             "y": 0,
             "name": "Bennets Bar",
@@ -191,8 +191,8 @@
         },
         {
             "id": 22,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.92643,
+            "lon": -3.20958,
             "x": 0,
             "y": 0,
             "name": "Bennets of Morningside",
@@ -200,8 +200,8 @@
         },
         {
             "id": 23,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.94732,
+            "lon": -3.19735,
             "x": 0,
             "y": 0,
             "name": "Black Bull",
@@ -209,8 +209,8 @@
         },
         {
             "id": 24,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95163,
+            "lon": -3.20369,
             "x": 0,
             "y": 0,
             "name": "Black Cat",
@@ -218,8 +218,8 @@
         },
         {
             "id": 25,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.94590,
+            "lon": -3.20319,
             "x": 0,
             "y": 0,
             "name": "Blue Blazer",
@@ -227,8 +227,8 @@
         },
         {
             "id": 26,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.96905,
+            "lon": -3.18446,
             "x": 0,
             "y": 0,
             "name": "The Bonnington",
@@ -236,8 +236,8 @@
         },
         {
             "id": 27,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95176,
+            "lon": -3.19154,
             "x": 0,
             "y": 0,
             "name": "The Booking Office",
@@ -245,8 +245,8 @@
         },
         {
             "id": 28,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.94846,
+            "lon": -3.19421,
             "x": 0,
             "y": 0,
             "name": "Bow Bar",
@@ -254,8 +254,8 @@
         },
         {
             "id": 29,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.93687,
+            "lon": -3.18064,
             "x": 0,
             "y": 0,
             "name": "Brass Monkey (The Grange)",
@@ -263,8 +263,8 @@
         },
         {
             "id": 30,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.96402,
+            "lon": -3.17771,
             "x": 0,
             "y": 0,
             "name": "Brass Monkey (Leith Walk)",
@@ -272,8 +272,8 @@
         },
         {
             "id": 31,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.94735,
+            "lon": -3.18531,
             "x": 0,
             "y": 0,
             "name": "Brass Monkey (Southside)",
@@ -281,8 +281,8 @@
         },
         {
             "id": 32,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.94432,
+            "lon": -3.20199,
             "x": 0,
             "y": 0,
             "name": "Brauhaus",
@@ -290,8 +290,8 @@
         },
         {
             "id": 33,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95845,
+            "lon": -3.19002,
             "x": 0,
             "y": 0,
             "name": "Broughton",
@@ -299,8 +299,8 @@
         },
         {
             "id": 34,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.97455,
+            "lon": -3.16082,
             "x": 0,
             "y": 0,
             "name": "The Bullfinch",
@@ -308,8 +308,8 @@
         },
         {
             "id": 35,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95386,
+            "lon": -3.19058,
             "x": 0,
             "y": 0,
             "name": "Cafe Royal",
@@ -317,8 +317,8 @@
         },
         {
             "id": 36,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.94823,
+            "lon": -3.20623,
             "x": 0,
             "y": 0,
             "name": "The Caley Picture House",
@@ -326,8 +326,8 @@
         },
         {
             "id": 37,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.93764,
+            "lon": -3.22579,
             "x": 0,
             "y": 0,
             "name": "Caley Sample Room",
@@ -335,8 +335,8 @@
         },
         {
             "id": 38,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.95280,
+            "lon": -3.20599,
             "x": 0,
             "y": 0,
             "name": "The Cambridge Bar",
@@ -344,8 +344,8 @@
         },
         {
             "id": 39,
-            "lat": 0,
-            "lon": 0,
+            "lat": 55.92758,
+            "lon": -3.20927,
             "x": 0,
             "y": 0,
             "name": "Canny Man's",
@@ -354,7 +354,6 @@
         {
             "id": 40,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Canons' Gait",
@@ -363,7 +362,6 @@
         {
             "id": 41,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Captain's Bar",
@@ -372,7 +370,6 @@
         {
             "id": 42,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Carriers Quarters",
@@ -381,7 +378,6 @@
         {
             "id": 43,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Cask & Barrel (New Town)",
@@ -390,7 +386,6 @@
         {
             "id": 44,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Cask & Barrel (Southside)",
@@ -399,7 +394,6 @@
         {
             "id": 45,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Castle Arms",
@@ -408,7 +402,6 @@
         {
             "id": 46,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Charwood Restaurant & Bar",
@@ -417,7 +410,6 @@
         {
             "id": 47,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Clark's Bar",
@@ -426,7 +418,6 @@
         {
             "id": 48,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Cloisters",
@@ -435,7 +426,6 @@
         {
             "id": 49,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Colinton Inn",
@@ -444,7 +434,6 @@
         {
             "id": 50,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Conan Doyle",
@@ -453,7 +442,6 @@
         {
             "id": 51,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Corstorphine Inn",
@@ -462,7 +450,6 @@
         {
             "id": 52,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Cuddie Brae",
@@ -471,7 +458,6 @@
         {
             "id": 53,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Cumberland Bar",
@@ -480,7 +466,6 @@
         {
             "id": 54,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Dagda",
@@ -489,7 +474,6 @@
         {
             "id": 55,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The David MacBeth Moir",
@@ -498,7 +482,6 @@
         {
             "id": 56,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Deacon Brodies Tavern",
@@ -507,7 +490,6 @@
         {
             "id": 57,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Dirty Dick's",
@@ -516,7 +498,6 @@
         {
             "id": 58,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Doctors",
@@ -525,7 +506,6 @@
         {
             "id": 59,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Doric",
@@ -534,7 +514,6 @@
         {
             "id": 60,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Dreadnought",
@@ -543,7 +522,6 @@
         {
             "id": 61,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Earl of Marchmont",
@@ -552,7 +530,6 @@
         {
             "id": 62,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Edinburgh Sports Club",
@@ -561,7 +538,6 @@
         {
             "id": 63,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Ensign Ewart",
@@ -570,7 +546,6 @@
         {
             "id": 64,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Esplanade",
@@ -579,7 +554,6 @@
         {
             "id": 65,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Festival",
@@ -588,7 +562,6 @@
         {
             "id": 66,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Fiddlers Arms",
@@ -597,7 +570,6 @@
         {
             "id": 67,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Foot of the Walk",
@@ -606,7 +578,6 @@
         {
             "id": 68,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Footlights",
@@ -615,7 +586,6 @@
         {
             "id": 69,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Foresters Guild",
@@ -624,7 +594,6 @@
         {
             "id": 70,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Fountain",
@@ -633,7 +602,6 @@
         {
             "id": 71,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "George IV Bar",
@@ -642,7 +610,6 @@
         {
             "id": 72,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Golden Acre",
@@ -651,7 +618,6 @@
         {
             "id": 73,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Golden Rule",
@@ -660,7 +626,6 @@
         {
             "id": 74,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Golf Tavern",
@@ -669,7 +634,6 @@
         {
             "id": 75,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Grange Cricket Club",
@@ -678,7 +642,6 @@
         {
             "id": 76,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Greenmantle",
@@ -687,7 +650,6 @@
         {
             "id": 77,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Greyfriars Bobby",
@@ -696,7 +658,6 @@
         {
             "id": 78,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Grosvenor",
@@ -705,7 +666,6 @@
         {
             "id": 79,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Guildford Arms",
@@ -714,7 +674,6 @@
         {
             "id": 80,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Halfway House",
@@ -723,7 +682,6 @@
         {
             "id": 81,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Hampton",
@@ -732,7 +690,6 @@
         {
             "id": 82,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Hanging Bat",
@@ -741,7 +698,6 @@
         {
             "id": 83,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Harbour Inn",
@@ -750,7 +706,6 @@
         {
             "id": 84,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Haymarket",
@@ -759,7 +714,6 @@
         {
             "id": 85,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Hebrides Market Street",
@@ -768,7 +722,6 @@
         {
             "id": 86,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Hebrides West End",
@@ -777,7 +730,6 @@
         {
             "id": 87,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Hectors",
@@ -786,7 +738,6 @@
         {
             "id": 88,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Heriot's Rugby Club",
@@ -795,7 +746,6 @@
         {
             "id": 89,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Hermitage",
@@ -804,7 +754,6 @@
         {
             "id": 90,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Hunter's Tryst",
@@ -813,7 +762,6 @@
         {
             "id": 91,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Jeremiah's Taproom",
@@ -822,7 +770,6 @@
         {
             "id": 92,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Jinglin' Geordie Bar",
@@ -831,7 +778,6 @@
         {
             "id": 93,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Leslie's",
@@ -840,7 +786,6 @@
         {
             "id": 94,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Joker & the Thief",
@@ -849,7 +794,6 @@
         {
             "id": 95,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Jolly Judge",
@@ -858,7 +802,6 @@
         {
             "id": 96,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Justinlees",
@@ -867,7 +810,6 @@
         {
             "id": 97,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Kay's Bar",
@@ -876,7 +818,6 @@
         {
             "id": 98,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Keller",
@@ -885,7 +826,6 @@
         {
             "id": 99,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Kenilworth",
@@ -894,7 +834,6 @@
         {
             "id": 100,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Kilderkin",
@@ -903,7 +842,6 @@
         {
             "id": 101,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "King's Wark",
@@ -912,7 +850,6 @@
         {
             "id": 102,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Kinleith Mill",
@@ -921,7 +858,6 @@
         {
             "id": 103,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Laird & Dog Inn",
@@ -930,7 +866,6 @@
         {
             "id": 104,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Last Drop",
@@ -939,7 +874,6 @@
         {
             "id": 105,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Library Bar (Teviot)",
@@ -948,7 +882,6 @@
         {
             "id": 106,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Mackays on the Mile",
@@ -957,7 +890,6 @@
         {
             "id": 107,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Magnum",
@@ -966,7 +898,6 @@
         {
             "id": 108,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Malt & Hops",
@@ -975,7 +906,6 @@
         {
             "id": 109,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Malt Shovel",
@@ -984,7 +914,6 @@
         {
             "id": 110,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Mash Tun",
@@ -993,7 +922,6 @@
         {
             "id": 111,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Mather's Broughton Street",
@@ -1002,7 +930,6 @@
         {
             "id": 112,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Mathers West End",
@@ -1011,7 +938,6 @@
         {
             "id": 113,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Melville Inn",
@@ -1020,7 +946,6 @@
         {
             "id": 114,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Merlin",
@@ -1029,7 +954,6 @@
         {
             "id": 115,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Milnes",
@@ -1038,7 +962,6 @@
         {
             "id": 116,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Mitre",
@@ -1047,7 +970,6 @@
         {
             "id": 117,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Musselburgh Rugby Club",
@@ -1056,7 +978,6 @@
         {
             "id": 118,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Newbarns Brewery & Taproom",
@@ -1065,7 +986,6 @@
         {
             "id": 119,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Newhaven Quay",
@@ -1074,7 +994,6 @@
         {
             "id": 120,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "No. 1 High Street",
@@ -1083,7 +1002,6 @@
         {
             "id": 121,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "O'Connor's",
@@ -1092,7 +1010,6 @@
         {
             "id": 122,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Old Bell",
@@ -1101,7 +1018,6 @@
         {
             "id": 123,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Old Chain Pier",
@@ -1110,7 +1026,6 @@
         {
             "id": 124,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Old Eastway Tap",
@@ -1119,7 +1034,6 @@
         {
             "id": 125,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Orchard",
@@ -1128,7 +1042,6 @@
         {
             "id": 126,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Ormelie",
@@ -1137,7 +1050,6 @@
         {
             "id": 127,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Ox",
@@ -1146,7 +1058,6 @@
         {
             "id": 128,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Oxford Bar",
@@ -1155,7 +1066,6 @@
         {
             "id": 129,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Persevere",
@@ -1164,7 +1074,6 @@
         {
             "id": 130,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Platform 5",
@@ -1173,7 +1082,6 @@
         {
             "id": 131,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Playfair",
@@ -1182,7 +1090,6 @@
         {
             "id": 132,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Portobello Tap",
@@ -1191,7 +1098,6 @@
         {
             "id": 133,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Queens Arms",
@@ -1200,7 +1106,6 @@
         {
             "id": 134,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Railway Inn",
@@ -1209,7 +1114,6 @@
         {
             "id": 135,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Regent",
@@ -1218,7 +1122,6 @@
         {
             "id": 136,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Riccarton Inn",
@@ -1227,7 +1130,6 @@
         {
             "id": 137,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Robbie's Bar",
@@ -1236,7 +1138,6 @@
         {
             "id": 138,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Rose St Brewery",
@@ -1245,7 +1146,6 @@
         {
             "id": 139,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Roseburn Bar",
@@ -1254,7 +1154,6 @@
         {
             "id": 140,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Roseleaf",
@@ -1263,7 +1162,6 @@
         {
             "id": 141,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Royal Dick (Summerhall)",
@@ -1272,7 +1170,6 @@
         {
             "id": 142,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Royal Oak",
@@ -1281,7 +1178,6 @@
         {
             "id": 143,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Ryrie's",
@@ -1290,7 +1186,6 @@
         {
             "id": 144,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Safari Lounge",
@@ -1299,7 +1194,6 @@
         {
             "id": 145,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Salisbury Arms",
@@ -1308,7 +1202,6 @@
         {
             "id": 146,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Salt Horse",
@@ -1317,7 +1210,6 @@
         {
             "id": 147,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Sandy Bell's",
@@ -1326,7 +1218,6 @@
         {
             "id": 148,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Scotsman's Lounge",
@@ -1335,7 +1226,6 @@
         {
             "id": 149,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Scottie",
@@ -1344,7 +1234,6 @@
         {
             "id": 150,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Scran & Scallie",
@@ -1353,7 +1242,6 @@
         {
             "id": 151,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Shakespeares",
@@ -1362,7 +1250,6 @@
         {
             "id": 152,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Sheep Heid",
@@ -1371,7 +1258,6 @@
         {
             "id": 153,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Shore",
@@ -1380,7 +1266,6 @@
         {
             "id": 154,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Southsider",
@@ -1389,7 +1274,6 @@
         {
             "id": 155,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Spylaw",
@@ -1398,7 +1282,6 @@
         {
             "id": 156,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "St Bernard's Bar",
@@ -1407,7 +1290,6 @@
         {
             "id": 157,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "St Vincent",
@@ -1416,7 +1298,6 @@
         {
             "id": 158,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Stable Bar",
@@ -1425,7 +1306,6 @@
         {
             "id": 159,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Staggs",
@@ -1434,7 +1314,6 @@
         {
             "id": 160,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Standing Order",
@@ -1443,7 +1322,6 @@
         {
             "id": 161,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Star Bar",
@@ -1452,7 +1330,6 @@
         {
             "id": 162,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Starbank Inn",
@@ -1461,7 +1338,6 @@
         {
             "id": 163,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Steading",
@@ -1470,7 +1346,6 @@
         {
             "id": 164,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Steel Coulson (Shore)",
@@ -1479,7 +1354,6 @@
         {
             "id": 165,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Steel Coulson (Southside)",
@@ -1488,7 +1362,6 @@
         {
             "id": 166,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Stewart Brewing Taproom",
@@ -1497,7 +1370,6 @@
         {
             "id": 167,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Stockbridge Tap",
@@ -1506,7 +1378,6 @@
         {
             "id": 168,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Stramash!",
@@ -1515,7 +1386,6 @@
         {
             "id": 169,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Tanners",
@@ -1524,7 +1394,6 @@
         {
             "id": 170,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Teuchters (West End)",
@@ -1533,7 +1402,6 @@
         {
             "id": 171,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Teuchters Landing",
@@ -1542,7 +1410,6 @@
         {
             "id": 172,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Theatre Royal",
@@ -1551,7 +1418,6 @@
         {
             "id": 173,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Thistle Street Bar",
@@ -1560,7 +1426,6 @@
         {
             "id": 174,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Thomson's Bar",
@@ -1569,7 +1434,6 @@
         {
             "id": 175,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Tiles Bar",
@@ -1578,7 +1442,6 @@
         {
             "id": 176,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Toby Carvery (Corstorphine)",
@@ -1587,7 +1450,6 @@
         {
             "id": 177,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Tolbooth Tavern",
@@ -1596,7 +1458,6 @@
         {
             "id": 178,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Waiting Room",
@@ -1605,7 +1466,6 @@
         {
             "id": 179,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Wally Dug",
@@ -1614,7 +1474,6 @@
         {
             "id": 180,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Westgate Farm",
@@ -1623,7 +1482,6 @@
         {
             "id": 181,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Whighams Wine Cellars",
@@ -1632,7 +1490,6 @@
         {
             "id": 182,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Whistle Binkies",
@@ -1641,7 +1498,6 @@
         {
             "id": 183,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The White Hart Inn",
@@ -1650,7 +1506,6 @@
         {
             "id": 184,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The White Lady",
@@ -1659,7 +1514,6 @@
         {
             "id": 185,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Willow (Meadowbank)",
@@ -1668,7 +1522,6 @@
         {
             "id": 186,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Willow on High Street",
@@ -1677,7 +1530,6 @@
         {
             "id": 187,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The Windsor",
@@ -1686,7 +1538,6 @@
         {
             "id": 188,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Winstons",
@@ -1695,7 +1546,6 @@
         {
             "id": 189,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Woodhall Arms",
@@ -1704,7 +1554,6 @@
         {
             "id": 190,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Woodland Creatures",
@@ -1713,7 +1562,6 @@
         {
             "id": 191,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "The World's End",
@@ -1722,7 +1570,6 @@
         {
             "id": 192,
             "lat": 0,
-            "lon": 0,
             "x": 0,
             "y": 0,
             "name": "Ye Olde Inn",
