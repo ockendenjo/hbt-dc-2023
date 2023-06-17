@@ -4,8 +4,6 @@
             "id": 1,
             "lat": 55.93953,
             "lon": -3.17958,
-            "x": 0,
-            "y": 0,
             "name": "The Abbey",
             "address": "65 South Clerk Street, EH8 9PP"
         },
@@ -13,8 +11,6 @@
             "id": 2,
             "lat": 55.95327,
             "lon": -3.19465,
-            "x": 0,
-            "y": 0,
             "name": "Abbotsford Bar & Restaurant",
             "address": "3-5 Rose Street, EH2 2PR"
         },
@@ -22,8 +18,6 @@
             "id": 3,
             "lat": 55.94951,
             "lon": -3.18795,
-            "x": 0,
-            "y": 0,
             "name": "The Advocate",
             "address": "7 Hunter Square, EH1 1QW"
         },
@@ -31,8 +25,6 @@
             "id": 4,
             "lat": 55.95016,
             "lon": -3.18843,
-            "x": 0,
-            "y": 0,
             "name": "The Albanach",
             "address": "197 High Street, EH1 1PE"
         },
@@ -40,8 +32,6 @@
             "id": 5,
             "lat": 55.95200,
             "lon": -3.20538,
-            "x": 0,
-            "y": 0,
             "name": "The Alexander Graham Bell",
             "address": "126-128 George Street, EH2 4JZ"
         },
@@ -49,8 +39,6 @@
             "id": 6,
             "lat": 55.95179,
             "lon": -3.20333,
-            "x": 0,
-            "y": 0,
             "name": "The Amber Rose",
             "address": "22-26 Castle Street, EH2 4LS"
         },
@@ -58,8 +46,6 @@
             "id": 7,
             "lat": 55.95795,
             "lon": -3.20620,
-            "x": 0,
-            "y": 0,
             "name": "The Antiquary",
             "address": "68-72 St Stephen Street, EH3 5AQ"
         },
@@ -67,8 +53,6 @@
             "id": 8,
             "lat": 55.95051,
             "lon": -3.18884,
-            "x": 0,
-            "y": 0,
             "name": "Arcade Bar",
             "address": "48 Cockburn Street, EH1 1PB"
         },
@@ -76,8 +60,6 @@
             "id": 9,
             "lat": 55.93821,
             "lon": -3.19154,
-            "x": 0,
-            "y": 0,
             "name": "Argyle Bar",
             "address": "15 Argyle Place, EH9 1JJ"
         },
@@ -85,8 +67,6 @@
             "id": 10,
             "lat": 55.95750,
             "lon": -3.16943,
-            "x": 0,
-            "y": 0,
             "name": "Artisan",
             "address": "35 London Road, EH7 5BQ"
         },
@@ -94,8 +74,6 @@
             "id": 11,
             "lat": 55.93900,
             "lon": -3.22367,
-            "x": 0,
-            "y": 0,
             "name": "Athletics Arms (Diggers)",
             "address": "1-3 Angle Park Terrace, EH11 2JX"
         },
@@ -103,8 +81,6 @@
             "id": 12,
             "lat": 55.94354,
             "lon": -3.18015,
-            "x": 0,
-            "y": 0,
             "name": "Auld Hoose",
             "address": "23-25 St Leonards Street, EH8 9QN"
         },
@@ -112,8 +88,6 @@
             "id": 13,
             "lat": 55.95237,
             "lon": -3.19929,
-            "x": 0,
-            "y": 0,
             "name": "Auld Hundred",
             "address": "100 Rose Street, EH2 2NN"
         },
@@ -121,8 +95,6 @@
             "id": 14,
             "lat": 55.95752,
             "lon": -3.20720,
-            "x": 0,
-            "y": 0,
             "name": "The Bailie",
             "address": "2 St Stephen Street, EH3 5AL"
         },
@@ -130,8 +102,6 @@
             "id": 15,
             "lat": 55.94881,
             "lon": -3.18659,
-            "x": 0,
-            "y": 0,
             "name": "Bannermans",
             "address": "212 Cowgate, EH1 1NQ"
         },
@@ -139,8 +109,6 @@
             "id": 16,
             "lat": 55.94936,
             "lon": -3.18681,
-            "x": 0,
-            "y": 0,
             "name": "The Banshee Labyrinth",
             "address": "29-35 Niddry Street, EH1 1LG"
         },
@@ -148,8 +116,6 @@
             "id": 17,
             "lat": 55.95805,
             "lon": -3.18919,
-            "x": 0,
-            "y": 0,
             "name": "Barony Bar",
             "address": "81-85 Broughton Street, EH1 3RJ"
         },
@@ -157,8 +123,6 @@
             "id": 18,
             "lat": 55.94734,
             "lon": -3.19718,
-            "x": 0,
-            "y": 0,
             "name": "The Beehive Inn",
             "address": "18-20 Grassmarket, EH1 2JU"
         },
@@ -166,8 +130,6 @@
             "id": 19,
             "lat": 55.95226,
             "lon": -3.18899,
-            "x": 0,
-            "y": 0,
             "name": "The Beer House",
             "address": "Waverley Station, EH1 1BB"
         },
@@ -175,8 +137,6 @@
             "id": 20,
             "lat": 55.95587,
             "lon": -3.16423,
-            "x": 0,
-            "y": 0,
             "name": "Bellfield Brewery Tap Room",
             "address": "46 Stanley Place, EH7 5TB"
         },
@@ -184,8 +144,6 @@
             "id": 21,
             "lat": 55.94175,
             "lon": -3.20333,
-            "x": 0,
-            "y": 0,
             "name": "Bennets Bar",
             "address": "8 Leven Street, EH3 9LG"
         },
@@ -193,8 +151,6 @@
             "id": 22,
             "lat": 55.92643,
             "lon": -3.20958,
-            "x": 0,
-            "y": 0,
             "name": "Bennets of Morningside",
             "address": "1 Maxwell Street, EH10 5HT"
         },
@@ -202,8 +158,6 @@
             "id": 23,
             "lat": 55.94732,
             "lon": -3.19735,
-            "x": 0,
-            "y": 0,
             "name": "Black Bull",
             "address": "12 Grassmarket, EH1 2JU"
         },
@@ -211,8 +165,6 @@
             "id": 24,
             "lat": 55.95163,
             "lon": -3.20369,
-            "x": 0,
-            "y": 0,
             "name": "Black Cat",
             "address": "168 Rose Street, EH2 4BA"
         },
@@ -220,8 +172,6 @@
             "id": 25,
             "lat": 55.94590,
             "lon": -3.20319,
-            "x": 0,
-            "y": 0,
             "name": "Blue Blazer",
             "address": "2 Spittal Street, EH3 9DX"
         },
@@ -229,8 +179,6 @@
             "id": 26,
             "lat": 55.96905,
             "lon": -3.18446,
-            "x": 0,
-            "y": 0,
             "name": "The Bonnington",
             "address": "284 Bonnington Road, EH6 5BE"
         },
@@ -238,8 +186,6 @@
             "id": 27,
             "lat": 55.95176,
             "lon": -3.19154,
-            "x": 0,
-            "y": 0,
             "name": "The Booking Office",
             "address": "17 Waverley Bridge, EH1 1BQ"
         },
@@ -247,8 +193,6 @@
             "id": 28,
             "lat": 55.94846,
             "lon": -3.19421,
-            "x": 0,
-            "y": 0,
             "name": "Bow Bar",
             "address": "80 West Bow, EH1 2HH"
         },
@@ -256,8 +200,6 @@
             "id": 29,
             "lat": 55.93687,
             "lon": -3.18064,
-            "x": 0,
-            "y": 0,
             "name": "Brass Monkey (The Grange)",
             "address": "1 Grange Road, EH9 1UH"
         },
@@ -265,8 +207,6 @@
             "id": 30,
             "lat": 55.96402,
             "lon": -3.17771,
-            "x": 0,
-            "y": 0,
             "name": "Brass Monkey (Leith Walk)",
             "address": "362 Leith Walk, EH6 5BR"
         },
@@ -274,8 +214,6 @@
             "id": 31,
             "lat": 55.94735,
             "lon": -3.18531,
-            "x": 0,
-            "y": 0,
             "name": "Brass Monkey (Southside)",
             "address": "14 Drummond Street, EH8 9TU"
         },
@@ -283,8 +221,6 @@
             "id": 32,
             "lat": 55.94432,
             "lon": -3.20199,
-            "x": 0,
-            "y": 0,
             "name": "Brauhaus",
             "address": "105-107 Lauriston Place, EH3 9JG"
         },
@@ -292,8 +228,6 @@
             "id": 33,
             "lat": 55.95845,
             "lon": -3.19002,
-            "x": 0,
-            "y": 0,
             "name": "Broughton",
             "address": "46-48a Broughton Street, EH1 3SA"
         },
@@ -301,8 +235,6 @@
             "id": 34,
             "lat": 55.97455,
             "lon": -3.16082,
-            "x": 0,
-            "y": 0,
             "name": "The Bullfinch",
             "address": "2-4 Bath Road, EH6 7JT"
         },
@@ -310,8 +242,6 @@
             "id": 35,
             "lat": 55.95386,
             "lon": -3.19058,
-            "x": 0,
-            "y": 0,
             "name": "Cafe Royal",
             "address": "19 West Register Street, EH2 2AA"
         },
@@ -319,8 +249,6 @@
             "id": 36,
             "lat": 55.94823,
             "lon": -3.20623,
-            "x": 0,
-            "y": 0,
             "name": "The Caley Picture House",
             "address": "31 Lothian Road, EH1 2DJ"
         },
@@ -328,8 +256,6 @@
             "id": 37,
             "lat": 55.93764,
             "lon": -3.22579,
-            "x": 0,
-            "y": 0,
             "name": "Caley Sample Room",
             "address": "56 Angle Park Terrace, EH11 2JR"
         },
@@ -337,8 +263,6 @@
             "id": 38,
             "lat": 55.95280,
             "lon": -3.20599,
-            "x": 0,
-            "y": 0,
             "name": "The Cambridge Bar",
             "address": "20 Young Street, EH2 4JB"
         },
@@ -346,1232 +270,969 @@
             "id": 39,
             "lat": 55.92758,
             "lon": -3.20927,
-            "x": 0,
-            "y": 0,
             "name": "Canny Man's",
             "address": "237 Morningside Road, EH10 4QU"
         },
         {
             "id": 40,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.95084,
+            "lon": -3.18246,
             "name": "The Canons' Gait",
             "address": "232 Canongate, EH8 8DQ"
         },
         {
             "id": 41,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94708,
+            "lon": -3.18653,
             "name": "The Captain's Bar",
             "address": "4 South College Street, EH8 9AA"
         },
         {
             "id": 42,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.97606,
+            "lon": -3.16856,
             "name": "The Carriers Quarters",
             "address": "42 Bernard Street, EH6 6PR"
         },
         {
             "id": 43,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.95912,
+            "lon": -3.19047,
             "name": "Cask & Barrel (New Town)",
             "address": "115 Broughton Street, EH1 3RZ"
         },
         {
             "id": 44,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.93904,
+            "lon": -3.18002,
             "name": "Cask & Barrel (Southside)",
             "address": "24-26 West Preston Street, EH8 9PZ"
         },
         {
             "id": 45,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94860,
+            "lon": -3.19481,
             "name": "The Castle Arms",
             "address": "9 Johnstone Terrace, EH1 2PW"
         },
         {
             "id": 46,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.90425,
+            "lon": -3.20700,
             "name": "Charwood Restaurant & Bar",
             "address": "47 Buckstone Terrace, EH10 6QJ"
         },
         {
             "id": 47,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.96019,
+            "lon": -3.20100,
             "name": "Clark's Bar",
             "address": "142 Dundas Street, EH3 5DQ"
         },
         {
             "id": 48,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94323,
+            "lon": -3.20199,
             "name": "Cloisters",
             "address": "26 Brougham Street, EH3 9JH"
         },
         {
             "id": 49,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.90739,
+            "lon": -3.25609,
             "name": "Colinton Inn",
             "address": "12-14 Bridge Road, EH13 0LQ"
         },
         {
             "id": 50,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.95653,
+            "lon": -3.18792,
             "name": "The Conan Doyle",
             "address": "71-73 York Place, EH1 3JD"
         },
         {
             "id": 51,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94061,
+            "lon": -3.28332,
             "name": "Corstorphine Inn",
             "address": "17 Corstorphine High Street, EH12 7SU"
         },
         {
             "id": 52,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.93484,
+            "lon": -3.09454,
             "name": "Cuddie Brae",
             "address": "91 Newcraighall Road, EH21 8RX"
         },
         {
             "id": 53,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.95906,
+            "lon": -3.19713,
             "name": "The Cumberland Bar",
             "address": "1-3 Cumberland Street, EH3 6RT"
         },
         {
             "id": 54,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94214,
+            "lon": -3.18400,
             "name": "Dagda",
             "address": "93-95 Buccleuch Street, EH8 9NG"
         },
         {
             "id": 55,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94368,
+            "lon": -3.05791,
             "name": "The David MacBeth Moir",
             "address": "Bridge Street, EH21 6AG"
         },
         {
             "id": 56,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94951,
+            "lon": -3.19290,
             "name": "Deacon Brodies Tavern",
             "address": "435 Lawnmarket, EH1 2NT"
         },
         {
             "id": 57,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.95146,
+            "lon": -3.20491,
             "name": "Dirty Dick's",
             "address": "159 Rose Street, EH2 4LS"
         },
         {
             "id": 58,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94547,
+            "lon": -3.19086,
             "name": "Doctors",
             "address": "32 Forrest Road, EH1 2QN"
         },
         {
             "id": 59,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.95094,
+            "lon": -3.19068,
             "name": "The Doric",
             "address": "15-16 Market Street, EH1 1DE"
         },
         {
             "id": 60,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.97893,
+            "lon": -3.18660,
             "name": "Dreadnought",
             "address": "72 North Fort Street, EH6 4HL"
         },
         {
             "id": 61,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.93802,
+            "lon": -3.19301,
             "name": "The Earl of Marchmont",
             "address": "22 Marchmont Crescent, EH9 1HG"
         },
         {
             "id": 62,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94948,
+            "lon": -3.22511,
             "name": "Edinburgh Sports Club",
             "address": "7 Belford Place, EH4 3DH"
         },
         {
             "id": 63,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94917,
+            "lon": -3.19439,
             "name": "Ensign Ewart",
             "address": "521 Lawnmarket, EH1 2PE"
         },
         {
             "id": 64,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.95486,
+            "lon": -3.11062,
             "name": "The Esplanade",
             "address": "62 Bath Street, EH15 1HF"
         },
         {
             "id": 65,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94586,
+            "lon": -3.20632,
             "name": "The Festival",
             "address": "18-20 Morrison Street, EH3 8BJ"
         },
         {
             "id": 66,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94688,
+            "lon": -3.19781,
             "name": "The Fiddlers Arms",
             "address": "11-13 Grassmarket, EH1 2HY"
         },
         {
             "id": 67,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.97053,
+            "lon": -3.17129,
             "name": "The Foot of the Walk",
             "address": "183 Constitution Street, EH6 7AA"
         },
         {
             "id": 68,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94607,
+            "lon": -3.20348,
             "name": "Footlights",
             "address": "7-11 Spittal Street, EH3 9DY"
         },
         {
             "id": 69,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.95509,
+            "lon": -3.11795,
             "name": "Foresters Guild",
             "address": "40 Portobello High Street, EH15 1DA"
         },
         {
             "id": 70,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94038,
+            "lon": -3.21806,
             "name": "The Fountain",
             "address": "127-131 Dundee Street, EH11 1AX"
         },
         {
             "id": 71,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94806,
+            "lon": -3.19173,
             "name": "George IV Bar",
             "address": "54 George IV Bridge, EH1 1EJ"
         },
         {
             "id": 72,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.97113,
+            "lon": -3.20734,
             "name": "Golden Acre",
             "address": "10 Bowhill Terrace, EH3 5QY"
         },
         {
             "id": 73,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.93905,
+            "lon": -3.21868,
             "name": "Golden Rule",
             "address": "30 Yeaman Place, EH11 1BT"
         },
         {
             "id": 74,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.93982,
+            "lon": -3.20357,
             "name": "The Golf Tavern",
             "address": "31 Wrights Houses, EH10 4HR"
         },
         {
             "id": 75,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.96007,
+            "lon": -3.21332,
             "name": "The Grange Cricket Club",
             "address": "Portgower Place, EH4 1HQ"
         },
         {
             "id": 76,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94389,
+            "lon": -3.18364,
             "name": "Greenmantle",
             "address": "44 West Crosscauseway, EH8 9JP"
         },
         {
             "id": 77,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94688,
+            "lon": -3.19142,
             "name": "Greyfriars Bobby",
             "address": "34 Candlemaker Row, EH1 2QE"
         },
         {
             "id": 78,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94980,
+            "lon": -3.20925,
             "name": "The Grosvenor",
             "address": "26-28 Shandwick Place, EH2 4RT"
         },
         {
             "id": 79,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.95366,
+            "lon": -3.19004,
             "name": "Guildford Arms",
             "address": "1 West Register Street, EH2 2AA"
         },
         {
             "id": 80,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.95099,
+            "lon": -3.18889,
             "name": "Halfway House",
             "address": "24 Fleshmarket Close, EH1 1BX"
         },
         {
             "id": 81,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94550,
+            "lon": -3.24291,
             "name": "Hampton",
             "address": "14 Corstorphine Road, EH12 6HN"
         },
         {
             "id": 82,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94551,
+            "lon": -3.20525,
             "name": "The Hanging Bat",
             "address": "133 Lothian Road, EH3 9AB"
         },
         {
             "id": 83,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.98078,
+            "lon": -3.19501,
             "name": "The Harbour Inn",
             "address": "4-6 Fishmarket Square, EH6 4LW"
         },
         {
             "id": 84,
-            "lat": 0,
-            "x": 0,
-            "y": 0,
+            "lat": 55.94635,
+            "lon": -3.21628,
             "name": "Haymarket",
             "address": "11-14a West Maitland Street, EH12 5DS"
         },
         {
             "id": 85,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Hebrides Market Street",
             "address": "17 Market Street, EH1 1DE"
         },
         {
             "id": 86,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Hebrides West End",
             "address": "185 Morrison Street, EH3 8DZ"
         },
         {
             "id": 87,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Hectors",
             "address": "47-49 Deanhaugh Street, EH4 1LR"
         },
         {
             "id": 88,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Heriot's Rugby Club",
             "address": "Bangholm Terrace, EH3 5QN"
         },
         {
             "id": 89,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Hermitage",
             "address": "1-5 Comiston Road, EH10 6AA"
         },
         {
             "id": 90,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Hunter's Tryst",
             "address": "97 Oxgangs Road, EH13 9NG"
         },
         {
             "id": 91,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Jeremiah's Taproom",
             "address": "7-8 Elm Row, EH7 4AA"
         },
         {
             "id": 92,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Jinglin' Geordie Bar",
             "address": "22 Fleshmarket Close, EH1 1BX"
         },
         {
             "id": 93,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Leslie's",
             "address": "45-47 Ratcliffe Terrace, EH9 1SU"
         },
         {
             "id": 94,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Joker & the Thief",
             "address": "71 Elm Row, EH7 4AQ"
         },
         {
             "id": 95,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Jolly Judge",
             "address": "7 James Court, EH1 2PB"
         },
         {
             "id": 96,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Justinlees",
             "address": "1-5 Dalhousie Road, EH22 3AT"
         },
         {
             "id": 97,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Kay's Bar",
             "address": "39 Jamaica Street West, EH3 6HF"
         },
         {
             "id": 98,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Keller",
             "address": "23-27 Broughton Street Lane, EH1 3LY"
         },
         {
             "id": 99,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Kenilworth",
             "address": "152-154 Rose Street, EH2 3JD"
         },
         {
             "id": 100,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Kilderkin",
             "address": "1 Browns Close, EH8 8BT"
         },
         {
             "id": 101,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "King's Wark",
             "address": "36 The Shore, EH6 6QU"
         },
         {
             "id": 102,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Kinleith Mill",
             "address": "604 Lanark Road, EH14 5EN"
         },
         {
             "id": 103,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Laird & Dog Inn",
             "address": "5 High Street, EH18 1NA"
         },
         {
             "id": 104,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Last Drop",
             "address": "74-78 Grassmarket, EH1 2JR"
         },
         {
             "id": 105,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Library Bar (Teviot)",
             "address": "Teviot Row House, EH8 9AJ"
         },
         {
             "id": 106,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Mackays on the Mile",
             "address": "223 Canongate, EH8 8BJ"
         },
         {
             "id": 107,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Magnum",
             "address": "1 Albany Street, EH1 3PY"
         },
         {
             "id": 108,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Malt & Hops",
             "address": "45 The Shore, EH6 6QU"
         },
         {
             "id": 109,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Malt Shovel",
             "address": "11-15 Cockburn Street, EH1 1BP"
         },
         {
             "id": 110,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Mash Tun",
             "address": "154 Easter Road, EH7 5RL"
         },
         {
             "id": 111,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Mather's Broughton Street",
             "address": "25 Broughton Street, EH1 3JU"
         },
         {
             "id": 112,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Mathers West End",
             "address": "1 Queensferry Street, EH2 4PA"
         },
         {
             "id": 113,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Melville Inn",
             "address": "By Dobbies Nursery, EH18 1AR"
         },
         {
             "id": 114,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Merlin",
             "address": "168 Morningside Road, EH10 4PU"
         },
         {
             "id": 115,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Milnes",
             "address": "35 Hanover Street, EH2 2PJ"
         },
         {
             "id": 116,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Mitre",
             "address": "131 High Street, EH1 1SG"
         },
         {
             "id": 117,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Musselburgh Rugby Club",
             "address": "Stoneyhill Farm Road, EH21 6RN"
         },
         {
             "id": 118,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Newbarns Brewery & Taproom",
             "address": "13 Jane Street, EH6 5HE"
         },
         {
             "id": 119,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Newhaven Quay",
             "address": "51-53 Newhaven Place, EH6 4TX"
         },
         {
             "id": 120,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "No. 1 High Street",
             "address": "1 Jeffrey Street, EH1 1SR"
         },
         {
             "id": 121,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "O'Connor's",
             "address": "2-4 Broughton Road, EH7 4EB"
         },
         {
             "id": 122,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Old Bell",
             "address": "233 Causewayside, EH9 1PH"
         },
         {
             "id": 123,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Old Chain Pier",
             "address": "32 Trinity Crescent, EH5 3ED"
         },
         {
             "id": 124,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Old Eastway Tap",
             "address": "218 Easter Road, EH7 5QH"
         },
         {
             "id": 125,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Orchard",
             "address": "1 Howard Place, EH3 5JZ"
         },
         {
             "id": 126,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Ormelie",
             "address": "44 Joppa Road, EH15 2ET"
         },
         {
             "id": 127,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Ox",
             "address": "49-51 London Street, EH3 6LX"
         },
         {
             "id": 128,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Oxford Bar",
             "address": "8 Young Street, EH2 4JB"
         },
         {
             "id": 129,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Persevere",
             "address": "398 Easter Road, EH6 8HT"
         },
         {
             "id": 130,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Platform 5",
             "address": "8 Clifton Terrace, EH12 5DR"
         },
         {
             "id": 131,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Playfair",
             "address": "Omni Centre, EH1 3AA"
         },
         {
             "id": 132,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Portobello Tap",
             "address": "87 Portobello High Street, EH15 1AW"
         },
         {
             "id": 133,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Queens Arms",
             "address": "49 Frederick Street, EH2 1EP"
         },
         {
             "id": 134,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Railway Inn",
             "address": "542 Lanark Road, EH14 5EL"
         },
         {
             "id": 135,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Regent",
             "address": "2 Montrose Terrace, EH7 5DL"
         },
         {
             "id": 136,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Riccarton Inn",
             "address": "198 Lanark Road West, EH14 5NX"
         },
         {
             "id": 137,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Robbie's Bar",
             "address": "367 Leith Walk, EH6 8SE"
         },
         {
             "id": 138,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Rose St Brewery",
             "address": "55-57 Rose Street, EH2 2NH"
         },
         {
             "id": 139,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Roseburn Bar",
             "address": "1 Roseburn Terrace, EH12 5NG"
         },
         {
             "id": 140,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Roseleaf",
             "address": "23-24 Sandport Place, EH6 6EW"
         },
         {
             "id": 141,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Royal Dick (Summerhall)",
             "address": "1 Summerhall, EH9 1PL"
         },
         {
             "id": 142,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Royal Oak",
             "address": "1 Infirmary Street, EH1 1LT"
         },
         {
             "id": 143,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Ryrie's",
             "address": "1 Haymarket Terrace, EH12 5EY"
         },
         {
             "id": 144,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Safari Lounge",
             "address": "21 Cadzow Place, EH7 5SN"
         },
         {
             "id": 145,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Salisbury Arms",
             "address": "58 Dalkeith Road, EH16 5AD"
         },
         {
             "id": 146,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Salt Horse",
             "address": "57-61 Blackfriars Street, EH1 1NB"
         },
         {
             "id": 147,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Sandy Bell's",
             "address": "25 Forrest Road, EH1 2QH"
         },
         {
             "id": 148,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Scotsman's Lounge",
             "address": "73 Cockburn Street, EH1 1BU"
         },
         {
             "id": 149,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Scottie",
             "address": "100 Northfield Broadway, EH8 7RU"
         },
         {
             "id": 150,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Scran & Scallie",
             "address": "1 Comely Bank Road, EH4 1DT"
         },
         {
             "id": 151,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Shakespeares",
             "address": "65 Lothian Road, EH1 2DJ"
         },
         {
             "id": 152,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Sheep Heid",
             "address": "43 The Causeway, EH15 3QA"
         },
         {
             "id": 153,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Shore",
             "address": "3 The Shore, EH6 6QW"
         },
         {
             "id": 154,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Southsider",
             "address": "3-7 West Richmond Street, EH8 9EF"
         },
         {
             "id": 155,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Spylaw",
             "address": "27 Spylaw Street, EH13 0JT"
         },
         {
             "id": 156,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "St Bernard's Bar",
             "address": "10 Raeburn Place, EH4 1HN"
         },
         {
             "id": 157,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "St Vincent",
             "address": "11 St Vincent Street, EH3 6SW"
         },
         {
             "id": 158,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Stable Bar",
             "address": "50 Mortonhall Gate, EH16 6TJ"
         },
         {
             "id": 159,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Staggs",
             "address": "81 North High Street, EH21 6JE"
         },
         {
             "id": 160,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Standing Order",
             "address": "62-66 George Street, EH2 2LR"
         },
         {
             "id": 161,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Star Bar",
             "address": "1 Northumberland Place, EH3 6LQ"
         },
         {
             "id": 162,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Starbank Inn",
             "address": "64 Laverockbank Road, EH5 3BZ"
         },
         {
             "id": 163,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Steading",
             "address": "118-120 Biggar Road, EH10 7DU"
         },
         {
             "id": 164,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Steel Coulson (Shore)",
             "address": "38 Bernard Street, EH6 6PR"
         },
         {
             "id": 165,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Steel Coulson (Southside)",
             "address": "114 Causewayside, EH9 1PU"
         },
         {
             "id": 166,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Stewart Brewing Taproom",
             "address": "26a Dryden Road, EH20 9LZ"
         },
         {
             "id": 167,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Stockbridge Tap",
             "address": "2-4 Raeburn Place, EH4 1HN"
         },
         {
             "id": 168,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Stramash!",
             "address": "207 Cowgate, EH1 1JQ"
         },
         {
             "id": 169,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Tanners",
             "address": "459 Lanark Road, EH14 5BA"
         },
         {
             "id": 170,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Teuchters (West End)",
             "address": "26 William Street, EH3 7NH"
         },
         {
             "id": 171,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Teuchters Landing",
             "address": "1C Dock Place, EH6 6LU"
         },
         {
             "id": 172,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Theatre Royal",
             "address": "25-27 Greenside Place, EH1 3AA"
         },
         {
             "id": 173,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Thistle Street Bar",
             "address": "39 Thistle Street, EH2 1DY"
         },
         {
             "id": 174,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Thomson's Bar",
             "address": "182-184 Morrison Street, EH3 8EB"
         },
         {
             "id": 175,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Tiles Bar",
             "address": "1 St Andrew Sqaure, EH2 2BD"
         },
         {
             "id": 176,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Toby Carvery (Corstorphine)",
             "address": "114-116 St John's Road, EH12 8AX"
         },
         {
             "id": 177,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Tolbooth Tavern",
             "address": "167 Canongate, EH8 8BN"
         },
         {
             "id": 178,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Waiting Room",
             "address": "7 Belhaven Terrace, EH10 5HZ"
         },
         {
             "id": 179,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Wally Dug",
             "address": "32 Northumberland Street, EH3 6LS"
         },
         {
             "id": 180,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Westgate Farm",
             "address": "55 South Gyle Broadway, EH12 9LR"
         },
         {
             "id": 181,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Whighams Wine Cellars",
             "address": "13 Hope Street, EH2 4EL"
         },
         {
             "id": 182,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Whistle Binkies",
             "address": "4-6 South Bridge, EH1 1LL"
         },
         {
             "id": 183,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The White Hart Inn",
             "address": "34 Grassmarket, EH1 2JU"
         },
         {
             "id": 184,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The White Lady",
             "address": "92-98 St John's Road, EH12 8AT"
         },
         {
             "id": 185,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Willow (Meadowbank)",
             "address": "35 Smokey Brae, EH8 7AA"
         },
         {
             "id": 186,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Willow on High Street",
             "address": "83 High Street, EH21 7DA"
         },
         {
             "id": 187,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The Windsor",
             "address": "45 Elm Row, EH7 4AH"
         },
         {
             "id": 188,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Winstons",
             "address": "20 Kirk Loan, EH12 7HD"
         },
         {
             "id": 189,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Woodhall Arms",
             "address": "135 Lanark Road West, EH14 5NZ"
         },
         {
             "id": 190,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Woodland Creatures",
             "address": "260-262 Leith Walk, EH6 5EL"
         },
         {
             "id": 191,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "The World's End",
             "address": "2-8 High Street, EH1 1TB"
         },
         {
             "id": 192,
             "lat": 0,
-            "x": 0,
-            "y": 0,
             "name": "Ye Olde Inn",
             "address": "25 Main Street, EH4 5BZ"
         }

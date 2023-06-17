@@ -65,15 +65,22 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     }
 
-    function loadData() {
-        fetch("data.json")
+    function loadPubs(): Promise<Pub[]> {
+        return fetch("pubs.json")
             .then((r) => r.json())
-            .then((j: PubFile) => j.pubs)
-            .then((pubs) => {
-                buildGrid(pubs);
-                buildList(pubs);
-                buildMap(pubs);
-            });
+            .then((j: PubFile) => j.pubs);
+    }
+
+    function loadGrid(): Promise<number[][]> {
+        return fetch("grid.json").then((r) => r.json());
+    }
+
+    function loadData() {
+        Promise.all([loadPubs(), loadGrid()]).then(([pubs, grid]) => {
+            buildGrid(pubs, grid);
+            buildList(pubs);
+            buildMap(pubs);
+        });
     }
 
     function buildList(pubs: Pub[]) {
@@ -96,16 +103,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function buildGrid(pubs: Pub[]) {
+    function buildGrid(pubs: Pub[], grid: number[][]) {
         const table = document.createElement("table");
         for (let r = 0; r < 12; r++) {
             const tr = document.createElement("tr");
             for (let c = 0; c < 16; c++) {
-                const id = r * 16 + c + 1;
-                const pub = pubs.find((p) => p.id === id);
+                const pubId = grid[r][c];
+                const pub = pubs.find((p) => p.id === pubId);
+
                 const td = document.createElement("td");
-                td.title = pub.name;
-                td.textContent = String(id);
+                td.title = pub?.name;
+                td.textContent = String(pub?.id || 0);
                 tr.append(td);
             }
             table.append(tr);
