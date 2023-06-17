@@ -1,6 +1,7 @@
 import "./map.css";
+import "./popup.css";
 import * as ol from "ol";
-import {Feature, View} from "ol";
+import {Feature, Overlay, View} from "ol";
 import TileLayer from "ol/layer/Tile";
 import OSM from "ol/source/OSM";
 import {fromLonLat} from "ol/proj";
@@ -32,17 +33,36 @@ document.addEventListener("DOMContentLoaded", () => {
             view: mapView,
         });
 
+        const container = document.getElementById("popup");
+        const content = document.getElementById("popup-content");
+        const closer = document.getElementById("popup-closer");
+
+        const overlay = new Overlay({
+            element: container,
+            autoPan: true,
+        });
+
         map.on("click", function (e) {
             const feature = map.forEachFeatureAtPixel(e.pixel, (f) => f);
             if (!feature) {
+                overlay.setPosition(undefined);
+                closer.blur();
                 return;
             }
 
-            document.getElementById("event-details").style.display = "block";
-
             const properties = feature.getProperties();
-            const event = properties.event as any;
+            const pub = properties.pub as Pub;
+
+            content.innerHTML = `<b>${pub.name}</b>`;
+            overlay.setPosition(e.coordinate);
         });
+
+        map.addOverlay(overlay);
+        closer.onclick = () => {
+            overlay.setPosition(undefined);
+            closer.blur();
+            return false;
+        };
     }
 
     function loadData() {
