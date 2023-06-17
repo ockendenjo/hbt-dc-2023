@@ -70,11 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
             .then((r) => r.json())
             .then((j: PubFile) => j.pubs)
             .then((pubs) => {
+                buildGrid(pubs);
                 buildList(pubs);
                 buildMap(pubs);
             });
-
-        buildGrid();
     }
 
     function buildList(pubs: Pub[]) {
@@ -97,13 +96,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function buildGrid() {
+    function buildGrid(pubs: Pub[]) {
         const table = document.createElement("table");
         for (let r = 0; r < 12; r++) {
             const tr = document.createElement("tr");
             for (let c = 0; c < 16; c++) {
+                const id = r * 16 + c + 1;
+                const pub = pubs.find((p) => p.id === id);
                 const td = document.createElement("td");
-                td.textContent = String(r * 16 + c + 1);
+                td.title = pub.name;
+                td.textContent = String(id);
                 tr.append(td);
             }
             table.append(tr);
