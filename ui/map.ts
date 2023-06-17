@@ -235,7 +235,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 t.tab.classList.add("active");
             });
         });
-    }
 
+        document.getElementById("form").onclick = () => {
+            document.getElementById("formlink").click();
+        };
+    }
     setupTabs();
 });
