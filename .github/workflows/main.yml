@@ -63,28 +63,28 @@ jobs:
           name: build
           path: ui/dist
 
-#  deploy:
-#    name: deploy
-#    runs-on: ubuntu-latest
-#    needs: [test, build]
-#    permissions:
-#      id-token: write   # This is required for requesting the JWT
-#      contents: read    # This is required for actions/checkout
-#    steps:
-#      - name: Checkout source code
-#        uses: actions/checkout@v3
-#
-#      - name: Download artifact
-#        uses: actions/download-artifact@v3
-#        with:
-#          name: build
-#          path: src/dist
-#
-#      - name: configure aws credentials
-#        uses: aws-actions/configure-aws-credentials@v2
-#        with:
-#          role-to-assume: arn:aws:iam::574363388371:role/MunrosCICDRole
-#          aws-region: eu-west-1
-#
-#      - name: S3 Sync
-#        run: aws s3 sync ./src/dist s3://${{secrets.S3_BUCKET_NAME}} --delete
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    needs: [test, build]
+    permissions:
+      id-token: write   # This is required for requesting the JWT
+      contents: read    # This is required for actions/checkout
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: ui/dist
+
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::574363388371:role/HBTDrinkingChallengeCICDRole
+          aws-region: eu-west-1
+
+      - name: S3 Sync
+        run: aws s3 sync ./ui/dist s3://dc2023.hbt.ockenden.io --delete
