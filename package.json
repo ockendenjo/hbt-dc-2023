@@ -1,0 +1,23 @@
+{
+  "name": "hbt-dc-2023",
+  "version": "0.1.0",
+  "bin": {
+    "hbt-dc-2023": "bin/hbt-dc-2023.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/node": "20.1.0",
+    "aws-cdk": "2.79.1",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.0.4"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.79.1",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
+  }
+}
