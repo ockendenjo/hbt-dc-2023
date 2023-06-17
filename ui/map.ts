@@ -8,10 +8,11 @@ import {fromLonLat} from "ol/proj";
 import {defaults as defaultControls} from "ol/control";
 import VectorSource from "ol/source/Vector";
 import VectorLayer from "ol/layer/Vector";
-import {Pub, PubFile} from "./ts/types";
+import {Pub, PubData, PubFile, StoredData, Tab} from "./ts/types";
 import {Point} from "ol/geom";
 import {Fill, Stroke, Style} from "ol/style";
 import CircleStyle from "ol/style/Circle";
+import {StorageService} from "./ts/StorageService";
 
 document.addEventListener("DOMContentLoaded", () => {
     const osmLayer = new TileLayer({
@@ -24,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const mapView = new View({maxZoom: 19});
     mapView.setCenter(fromLonLat([-3.18985, 55.95285]));
     mapView.setZoom(12);
+
+    const storageSvc = new StorageService();
 
     function initialiseMap() {
         const map = new ol.Map({
@@ -66,10 +69,16 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     }
 
-    function loadPubs(): Promise<Pub[]> {
+    function loadPubs(): Promise<PubData[]> {
         return fetch("pubs.json")
             .then((r) => r.json())
-            .then((j: PubFile) => j.pubs);
+            .then((j: PubFile) => j.pubs)
+            .then((pubs) => {
+                return pubs.map((p) => {
+                    const points = storageSvc.getPoints(p.id);
+                    return {...p, points: points} as PubData;
+                });
+            });
     }
 
     function loadGrid(): Promise<number[][]> {
@@ -104,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function buildGrid(pubs: Pub[], grid: number[][]) {
+    function buildGrid(pubs: PubData[], grid: number[][]) {
         const table = document.createElement("table");
         for (let r = 0; r < 12; r++) {
             const tr = document.createElement("tr");
@@ -113,9 +122,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 const pub = pubs.find((p) => p.id === pubId);
 
                 const td = document.createElement("td");
+                pub.gridCell = td;
+
                 td.title = pub?.name;
                 td.textContent = String(pub?.id || 0);
                 tr.append(td);
+
+                td.addEventListener("click", () => {
+                    viewPubDetails(pub);
+                });
+                styleGridCell(pub);
             }
             table.append(tr);
         }
@@ -140,29 +156,70 @@ document.addEventListener("DOMContentLoaded", () => {
             iconFeature.setStyle(style);
             vectorSource.addFeature(iconFeature);
         });
-
-        // mapView.fit(vectorSource.getExtent(), {padding: [20, 20, 20, 20]});
     }
 
     initialiseMap();
     loadData();
 
-    function setupTabs() {
-        const tabs = [
-            {
-                tab: document.getElementById("select-grid"),
-                contents: document.getElementById("tab-grid"),
-            },
-            {
-                tab: document.getElementById("select-map"),
-                contents: document.getElementById("tab-map"),
-            },
-            {
-                tab: document.getElementById("select-list"),
-                contents: document.getElementById("tab-list"),
-            },
-        ];
+    function viewPubDetails(pub: PubData) {
+        console.log(pub);
 
+        document.getElementById("pub-name").innerText = pub.name;
+        document.getElementById("pub-address").innerText = pub.address;
+        const selectElem = document.getElementById("pub-select") as HTMLSelectElement;
+        selectElem.value = String(pub.points);
+
+        selectElem.onchange = () => {
+            const newPoints = Number(selectElem.value);
+            storageSvc.setPoints(pub.id, newPoints);
+            pub.points = newPoints;
+            styleGridCell(pub);
+        };
+        pubTab.tab.click();
+    }
+
+    function styleGridCell(pub: PubData) {
+        switch (pub.points) {
+            case 1:
+                pub.gridCell.className = "visit-ok";
+                break;
+            case 3:
+                pub.gridCell.className = "visit-good";
+                break;
+            case -1:
+                pub.gridCell.className = "visit-bad";
+                break;
+            default:
+                pub.gridCell.className = "";
+        }
+    }
+
+    const pubTab = {
+        tab: document.getElementById("select-pub"),
+        contents: document.getElementById("tab-pub"),
+        name: "pub",
+    };
+
+    const tabs: Tab[] = [
+        {
+            tab: document.getElementById("select-grid"),
+            contents: document.getElementById("tab-grid"),
+            name: "grid",
+        },
+        {
+            tab: document.getElementById("select-map"),
+            contents: document.getElementById("tab-map"),
+            name: "map",
+        },
+        {
+            tab: document.getElementById("select-list"),
+            contents: document.getElementById("tab-list"),
+            name: "list",
+        },
+        pubTab,
+    ];
+
+    function setupTabs() {
         tabs.forEach((t) => {
             const otherTabs = tabs.filter((i) => i !== t);
             t.tab.addEventListener("click", () => {

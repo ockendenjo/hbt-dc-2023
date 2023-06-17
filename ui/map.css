@@ -74,3 +74,24 @@ td {
 .list-text {
     line-height: 60px;
 }
+
+#pub-container {
+    padding: 20px;
+}
+
+.info {
+    padding: 20px 0;
+}
+
+.visit-ok {
+    background: chocolate;
+}
+
+.visit-good {
+    background: saddlebrown;
+    color: white;
+}
+
+.visit-bad {
+    background: orangered;
+}

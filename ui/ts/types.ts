@@ -9,3 +9,16 @@ export type Pub = {
     name: string;
     address: string;
 };
+
+export type PubData = {
+    points: number;
+    gridCell: HTMLTableCellElement;
+} & Pub;
+
+export type Tab = {
+    tab: HTMLElement;
+    contents: HTMLElement;
+    name: string;
+};
+
+export type StoredData = Record<string, number>;

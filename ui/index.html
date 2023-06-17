@@ -11,6 +11,7 @@
             <div id="select-grid" class="active">Grid</div>
             <div id="select-list">List</div>
             <div id="select-map">Map</div>
+            <div id="select-pub" style="display: none">Pub</div>
             <div>Form</div>
         </div>
         <div id="tab-grid" class="tab">
@@ -24,6 +25,22 @@
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
                 <div id="popup-content"></div>
+            </div>
+        </div>
+        <div id="tab-pub" class="tab" style="display: none">
+            <div class="tab-scroll" id="pub-container">
+                <h1 id="pub-name">Pub Name</h1>
+                <div id="pub-address">Address, Street, Edinburgh</div>
+
+                <div class="info">Set a status below to update the grid:</div>
+                <div>
+                    <select id="pub-select">
+                        <option value="0">Not visited</option>
+                        <option value="-1">-1 point</option>
+                        <option value="1">1 point</option>
+                        <option value="3">3 points</option>
+                    </select>
+                </div>
             </div>
         </div>
         <script type="module" src="map.ts"></script>
