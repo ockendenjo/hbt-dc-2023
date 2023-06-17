@@ -8,7 +8,7 @@ import {fromLonLat} from "ol/proj";
 import {defaults as defaultControls} from "ol/control";
 import VectorSource from "ol/source/Vector";
 import VectorLayer from "ol/layer/Vector";
-import {Pub, PubData, PubFile, StoredData, Tab} from "./ts/types";
+import {Pub, PubData, PubFile, Tab} from "./ts/types";
 import {Point} from "ol/geom";
 import {Fill, Stroke, Style} from "ol/style";
 import CircleStyle from "ol/style/Circle";
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function buildList(pubs: Pub[]) {
+    function buildList(pubs: PubData[]) {
         const div = document.getElementById("list-container");
         for (const p of pubs) {
             const item = document.createElement("div");
@@ -110,6 +110,10 @@ document.addEventListener("DOMContentLoaded", () => {
             item.append(itemName);
 
             div.append(item);
+
+            item.onclick = () => {
+                viewPubDetails(p);
+            };
         }
     }
 

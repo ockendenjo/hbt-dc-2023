@@ -55,6 +55,11 @@ td {
     height: 60px;
     background: #f0f0f0;
     text-align: center;
+    cursor: pointer;
+}
+
+td:hover {
+    opacity: 0.5;
 }
 
 .list-item {
@@ -62,6 +67,11 @@ td {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid saddlebrown;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background: #fafafa;
 }
 
 .list-id {
