@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HBT Parkruns</title>
+    </head>
+    <body>
+        <div id="map"></div>
+        <div id="rightPanel">
+            <div id="rightPanelContent">
+                <h1>HBT Parkruns</h1>
+                <div>Total HBT runs: <span id="total_count">0</span></div>
+
+                <h2>Layers</h2>
+                <select id="layer-select">
+                    <option value="popularity" selected>Popularity</option>
+                    <option value="fkt-star">Fastest time - *</option>
+                    <option value="fkt-m">Fastest time - M</option>
+                    <option value="fkt-w">Fastest time - W</option>
+                    <option value="updated">Recently updated</option>
+                    <option value="unvisited">Not visited</option>
+                </select>
+
+                <div id="event-details">
+                    <h2 id="name"></h2>
+                    <div class="data-row">
+                        <div>ID</div>
+                        <div id="id"></div>
+                    </div>
+                    <div class="data-row">
+                        <div>Updated</div>
+                        <div id="updated"></div>
+                    </div>
+                    <div class="data-row">
+                        <div>HBT Runs</div>
+                        <div id="runs"></div>
+                    </div>
+                    <div class="data-row">
+                        <div>Fastest female</div>
+                        <div id="fgw-time"></div>
+                    </div>
+                    <div class="data-row">
+                        <div>&nbsp;</div>
+                        <div id="fgw-name"></div>
+                    </div>
+                    <div class="data-row">
+                        <div>Fastest male</div>
+                        <div id="fgm-time"></div>
+                    </div>
+                    <div class="data-row">
+                        <div>&nbsp;</div>
+                        <div id="fgm-name"></div>
+                    </div>
+                    <div class="data-row">
+                        <div>Website</div>
+                        <div><a target="_blank" id="link">Link</a></div>
+                    </div>
+
+                    <div id="records-container">
+                        <h3>Age category records</h3>
+                        <div id="records-details">
+                            <div class="record">
+                                <div>SM25-29</div>
+                                <div>00:00 Ash Beatty</div>
+                            </div>
+                            <div class="record">
+                                <div>SW25-29</div>
+                                <div>00:00 Aysha Beatty</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="map.ts"></script>
+    </body>
+</html>

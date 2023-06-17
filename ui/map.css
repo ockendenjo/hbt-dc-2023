@@ -1,0 +1,76 @@
+@import "node_modules/ol/ol.css";
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: arial, veranda, "open sans";
+    overflow: hidden;
+}
+
+body {
+    flex-direction: row;
+    display: flex;
+}
+
+#map {
+    flex: 1 1 auto;
+}
+
+#rightPanel {
+    width: 320px;
+    height: 100%;
+    border-left: 2px solid #404040;
+    background-color: #fafafa;
+    display: flex;
+}
+
+#rightPanelContent {
+    padding: 10px;
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+#event-details {
+    display: none;
+}
+
+.data-row {
+    display: flex;
+    flex-direction: row;
+    padding: 4px 0;
+}
+
+.data-row:not(:last-of-type) {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.data-row > div {
+    flex: 1;
+}
+
+.record {
+    display: flex;
+    flex-direction: row;
+    padding: 4px 0;
+}
+.record:not(:last-of-type) {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.record > div:first-child {
+    width: 80px;
+}
+
+.record > div:last-child {
+    flex: 1;
+}
+
+.opacity-container {
+    margin-top: 8px;
+}
+
+#opacity {
+    width: 100%;
+}
