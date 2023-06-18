@@ -226,19 +226,31 @@ document.addEventListener("DOMContentLoaded", () => {
     function setupTabs() {
         tabs.forEach((t) => {
             const otherTabs = tabs.filter((i) => i !== t);
-            t.tab.addEventListener("click", () => {
+            t.activate = () => {
                 otherTabs.forEach((ot) => {
                     ot.contents.style.display = "none";
                     ot.tab.classList.remove("active");
                 });
                 t.contents.style.display = "";
                 t.tab.classList.add("active");
+            };
+
+            t.tab.addEventListener("click", () => {
+                t.activate();
+                history.pushState(undefined, "", `?tab=${t.name}`);
             });
         });
 
         document.getElementById("form").onclick = () => {
             document.getElementById("formlink").click();
         };
+
+        window.addEventListener("popstate", (event) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const tabName = urlParams.get("tab") || "grid";
+            const t = tabs.find((t) => t.name === tabName);
+            t?.activate();
+        });
     }
     setupTabs();
 });

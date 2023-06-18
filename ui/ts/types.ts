@@ -19,6 +19,7 @@ export type Tab = {
     tab: HTMLElement;
     contents: HTMLElement;
     name: string;
+    activate?: () => void;
 };
 
 export type StoredData = Record<string, number>;
