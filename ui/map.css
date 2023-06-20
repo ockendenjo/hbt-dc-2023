@@ -16,20 +16,30 @@ body {
 
 .nav {
     height: 40px;
+    min-height: 40px;
+    overflow: hidden;
     background: saddlebrown;
 }
 
-.nav > div {
+.nav-items {
+    height: 40px;
+    max-height: 40px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.nav-items > div {
     display: inline-block;
     height: 40px;
+    min-height: 40px;
     line-height: 40px;
     padding: 0 20px;
     cursor: pointer;
     color: white;
 }
 
-.nav > div:hover,
-.nav > div.active {
+.nav-items > div:hover,
+.nav-items > div.active {
     background: chocolate;
 }
 
@@ -104,4 +114,8 @@ td:hover {
 
 .visit-bad {
     background: orangered;
+}
+
+.padded {
+    padding: 20px;
 }

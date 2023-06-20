@@ -8,11 +8,14 @@
     </head>
     <body>
         <div class="nav">
-            <div id="select-grid" class="active">Grid</div>
-            <div id="select-list">List</div>
-            <div id="select-map">Map</div>
-            <div id="select-pub" style="display: none">Pub</div>
-            <div id="form">Form</div>
+            <div class="nav-items">
+                <div id="select-grid" class="active">Grid</div>
+                <div id="select-list">List</div>
+                <div id="select-map">Map</div>
+                <div id="select-info">Instructions</div>
+                <div id="select-pub" style="display: none">Pub</div>
+                <div id="form">Form</div>
+            </div>
             <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSel2wM26PNbnHYUpSb3lBtW_BfHWHMaEjeLRfolaNirBt67iA/viewform?usp=sf_link"
                 target="_blank"
@@ -31,6 +34,40 @@
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
                 <div id="popup-content"></div>
+            </div>
+        </div>
+        <div id="tab-info" class="tab" style="display: none">
+            <div class="tab-scroll padded">
+                <h1>Instructions</h1>
+                <h2>1. Visit some pubs</h2>
+                <p>
+                    Use the <b>Map</b> tab / Millie's instructions to plan a visit to some pubs or see where HBT takes
+                    you.
+                </p>
+
+                <h2>2. Fill in the form</h2>
+                <p>
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSel2wM26PNbnHYUpSb3lBtW_BfHWHMaEjeLRfolaNirBt67iA/viewform?usp=sf_link"
+                        >Fill in the form</a
+                    >
+                    to submit your pub visits - one form per pub visited.
+                </p>
+
+                <h2>3. Wait for message from Millie</h2>
+                <p>Millie will notify you how many points each pub was worth.</p>
+
+                <h2>4. Record the points for each pub</h2>
+                <p>
+                    From the <b>list</b> tab or <b>grid</b> tab click the pub and record the points scored. Recording
+                    points will colour squares in the grid.
+                </p>
+
+                <h2>5. Use the grid to plan future pub visits</h2>
+                <p>
+                    High and negative scoring pubs are arranged in clusters on the grid - this may help you decide which
+                    pub(s) to visit next.
+                </p>
             </div>
         </div>
         <div id="tab-pub" class="tab" style="display: none">

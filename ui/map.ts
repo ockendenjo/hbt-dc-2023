@@ -220,8 +220,20 @@ document.addEventListener("DOMContentLoaded", () => {
             contents: document.getElementById("tab-list"),
             name: "list",
         },
+        {
+            tab: document.getElementById("select-info"),
+            contents: document.getElementById("tab-info"),
+            name: "instructions",
+        },
         pubTab,
     ];
+
+    function checkActiveTab() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const tabName = urlParams.get("tab") || "grid";
+        const t = tabs.find((t) => t.name === tabName);
+        t?.activate();
+    }
 
     function setupTabs() {
         tabs.forEach((t) => {
@@ -245,12 +257,8 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("formlink").click();
         };
 
-        window.addEventListener("popstate", (event) => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const tabName = urlParams.get("tab") || "grid";
-            const t = tabs.find((t) => t.name === tabName);
-            t?.activate();
-        });
+        window.addEventListener("popstate", checkActiveTab);
     }
     setupTabs();
+    checkActiveTab();
 });
