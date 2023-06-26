@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
         image: new CircleStyle({
             radius: 7,
             fill: new Fill({color: "#C0C0C0"}),
-            stroke: new Stroke({color: "white", width: 2})
+            stroke: new Stroke({color: "white", width: 2}),
         }),
     });
 
