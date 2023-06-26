@@ -84,11 +84,12 @@ td:hover {
     background: #fafafa;
 }
 
-.list-id {
+.list-item div:first-child {
     width: 60px;
     height: 60px;
     text-align: center;
     line-height: 60px;
+    box-sizing: border-box;
 }
 
 .list-text {

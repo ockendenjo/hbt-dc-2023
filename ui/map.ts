@@ -90,6 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
             buildGrid(pubs, grid);
             buildList(pubs);
             buildMap(pubs);
+            stylePubs(pubs);
         });
     }
 
@@ -100,8 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
             item.className = "list-item";
 
             const itemId = document.createElement("div");
-            itemId.className = "list-id";
             itemId.textContent = String(p.id);
+            p.listCell = itemId;
             item.append(itemId);
 
             const itemName = document.createElement("div");
@@ -135,7 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 td.addEventListener("click", () => {
                     viewPubDetails(pub);
                 });
-                styleGridCell(pub);
             }
             table.append(tr);
         }
@@ -162,6 +162,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    function stylePubs(pubs: PubData[]) {
+        pubs.forEach((p) => {
+            styleGridCell(p);
+        });
+    }
+
     initialiseMap();
     loadData();
 
@@ -183,27 +189,31 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function styleGridCell(pub: PubData) {
-        switch (pub.points) {
+        const className = getCellClassName(pub.points);
+        if (pub.gridCell) {
+            pub.gridCell.className = className;
+        }
+        if (pub.listCell) {
+            pub.listCell.className = className;
+        }
+    }
+
+    function getCellClassName(points: number): string {
+        switch (points) {
             case 1:
-                pub.gridCell.className = "visit-ok";
-                break;
+                return "visit-ok";
             case 3:
-                pub.gridCell.className = "visit-good";
-                break;
+                return "visit-good";
             case -1:
-                pub.gridCell.className = "visit-bad";
-                break;
+                return "visit-bad";
             case -2:
-                pub.gridCell.className = "novisit-bad";
-                break;
+                return "novisit-bad";
             case 2:
-                pub.gridCell.className = "novisit-ok";
-                break;
+                return "novisit-ok";
             case 4:
-                pub.gridCell.className = "novisit-good";
-                break;
+                return "novisit-good";
             default:
-                pub.gridCell.className = "";
+                return "";
         }
     }
 

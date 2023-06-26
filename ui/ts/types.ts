@@ -13,6 +13,7 @@ export type Pub = {
 export type PubData = {
     points: number;
     gridCell: HTMLTableCellElement;
+    listCell: HTMLDivElement;
 } & Pub;
 
 export type Tab = {
