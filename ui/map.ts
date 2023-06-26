@@ -150,13 +150,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }),
     });
 
-    function buildMap(pubs: Pub[]) {
+    const visitedStyle = new Style({
+        image: new CircleStyle({
+            radius: 7,
+            fill: new Fill({color: "#C0C0C0"}),
+            stroke: new Stroke({color: "white", width: 2})
+        }),
+    });
+
+    function buildMap(pubs: PubData[]) {
         pubs.filter((p) => p.lon).forEach((p) => {
             const featureConfig = {
                 geometry: new Point(fromLonLat([p.lon, p.lat])),
                 pub: p,
             };
             const iconFeature = new Feature(featureConfig);
+            p.feature = iconFeature;
             iconFeature.setStyle(style);
             vectorSource.addFeature(iconFeature);
         });
@@ -164,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function stylePubs(pubs: PubData[]) {
         pubs.forEach((p) => {
-            styleGridCell(p);
+            setPubStyles(p);
         });
     }
 
@@ -181,18 +190,25 @@ document.addEventListener("DOMContentLoaded", () => {
             const newPoints = Number(selectElem.value);
             storageSvc.setPoints(pub.id, newPoints);
             pub.points = newPoints;
-            styleGridCell(pub);
+            setPubStyles(pub);
         };
         pubTab.tab.click();
     }
 
-    function styleGridCell(pub: PubData) {
+    function setPubStyles(pub: PubData) {
         const className = getCellClassName(pub.points);
         if (pub.gridCell) {
             pub.gridCell.className = className;
         }
         if (pub.listCell) {
             pub.listCell.className = className;
+        }
+        if (pub.feature) {
+            if ([-1, 1, 3].includes(pub.points)) {
+                pub.feature.setStyle(visitedStyle);
+            } else {
+                pub.feature.setStyle(style);
+            }
         }
     }
 
@@ -276,6 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         window.addEventListener("popstate", checkActiveTab);
     }
+
     setupTabs();
     checkActiveTab();
 });
