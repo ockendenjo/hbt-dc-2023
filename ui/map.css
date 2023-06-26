@@ -136,3 +136,7 @@ td:hover {
 .padded {
     padding: 20px;
 }
+
+.submitted {
+    background-image: linear-gradient(225deg, limegreen, limegreen 10px, transparent 10px, transparent);
+}
