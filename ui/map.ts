@@ -172,8 +172,6 @@ document.addEventListener("DOMContentLoaded", () => {
     loadData();
 
     function viewPubDetails(pub: PubData) {
-        console.log(pub);
-
         document.getElementById("pub-name").innerText = pub.name;
         document.getElementById("pub-address").innerText = pub.address;
         const selectElem = document.getElementById("pub-select") as HTMLSelectElement;
@@ -281,3 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setupTabs();
     checkActiveTab();
 });
+
+window.onerror = (event, source, lineno, colno, error) => {
+    console.error({event, source, lineno, colno, error});
+};

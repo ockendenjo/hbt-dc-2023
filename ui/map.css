@@ -94,6 +94,7 @@ td:hover {
 
 .list-text {
     line-height: 60px;
+    padding-left: 8px;
 }
 
 #pub-container {
@@ -119,14 +120,17 @@ td:hover {
 
 .novisit-bad {
     border: 4px solid orangered;
+    line-height: 52px !important;
 }
 
 .novisit-ok {
     border: 4px solid chocolate;
+    line-height: 52px !important;
 }
 
 .novisit-good {
     border: 4px solid saddlebrown;
+    line-height: 52px !important;
 }
 
 .padded {
