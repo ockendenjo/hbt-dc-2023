@@ -193,6 +193,15 @@ document.addEventListener("DOMContentLoaded", () => {
             case -1:
                 pub.gridCell.className = "visit-bad";
                 break;
+            case -2:
+                pub.gridCell.className = "novisit-bad";
+                break;
+            case 2:
+                pub.gridCell.className = "novisit-ok";
+                break;
+            case 4:
+                pub.gridCell.className = "novisit-good";
+                break;
             default:
                 pub.gridCell.className = "";
         }

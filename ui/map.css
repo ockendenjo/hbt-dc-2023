@@ -116,6 +116,18 @@ td:hover {
     background: orangered;
 }
 
+.novisit-bad {
+    border: 4px solid orangered;
+}
+
+.novisit-ok {
+    border: 4px solid chocolate;
+}
+
+.novisit-good {
+    border: 4px solid saddlebrown;
+}
+
 .padded {
     padding: 20px;
 }
