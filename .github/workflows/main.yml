@@ -87,4 +87,4 @@ jobs:
           aws-region: eu-west-1
 
       - name: S3 Sync
-        run: aws s3 sync ./ui/dist s3://dc2023.hbt.ockenden.io --delete
+        run: aws s3 sync ./ui/dist s3://dc2023.hbt.ockenden.io
