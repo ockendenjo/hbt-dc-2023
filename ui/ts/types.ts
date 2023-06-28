@@ -17,6 +17,7 @@ export type PubData = {
     gridCell: HTMLTableCellElement;
     listCell: HTMLDivElement;
     feature?: Feature;
+    formDone?: boolean;
 } & Pub;
 
 export type Tab = {

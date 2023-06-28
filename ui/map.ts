@@ -76,7 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
             .then((pubs) => {
                 return pubs.map((p) => {
                     const points = storageSvc.getPoints(p.id);
-                    return {...p, points: points} as PubData;
+                    const formDone = storageSvc.getFormStatus(p.id);
+                    return {...p, points: points, formDone} as PubData;
                 });
             });
     }
@@ -183,8 +184,11 @@ document.addEventListener("DOMContentLoaded", () => {
     function viewPubDetails(pub: PubData) {
         document.getElementById("pub-name").innerText = pub.name;
         document.getElementById("pub-address").innerText = pub.address;
+
         const selectElem = document.getElementById("pub-select") as HTMLSelectElement;
         selectElem.value = String(pub.points);
+        const checkElem = document.getElementById("pub-form-check") as HTMLInputElement;
+        checkElem.checked = Boolean(pub.formDone);
 
         selectElem.onchange = () => {
             const newPoints = Number(selectElem.value);
@@ -192,11 +196,18 @@ document.addEventListener("DOMContentLoaded", () => {
             pub.points = newPoints;
             setPubStyles(pub);
         };
+
+        checkElem.onchange = () => {
+            storageSvc.setFormStatus(pub.id, checkElem.checked);
+            pub.formDone = checkElem.checked;
+            setPubStyles(pub);
+        };
+
         pubTab.tab.click();
     }
 
     function setPubStyles(pub: PubData) {
-        const className = getCellClassName(pub.points);
+        const className = getCellClassName(pub.points, pub.formDone);
         if (pub.gridCell) {
             pub.gridCell.className = className;
         }
@@ -212,7 +223,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function getCellClassName(points: number): string {
+    function getCellClassName(points: number, formDone: boolean): string {
+        if (formDone) {
+            console.log("done");
+        }
+        const pointsClassName = getPointsClassName(points);
+        const doneClassName = formDone ? "submitted" : "";
+        return [pointsClassName, doneClassName].filter((s) => s).join(" ");
+    }
+
+    function getPointsClassName(points: number): string {
         switch (points) {
             case 1:
                 return "visit-ok";

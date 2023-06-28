@@ -73,8 +73,9 @@
         <div id="tab-pub" class="tab" style="display: none">
             <div class="tab-scroll" id="pub-container">
                 <h1 id="pub-name">Pub Name</h1>
-                <div id="pub-address">Address, Street, Edinburgh</div>
+                <p id="pub-address">Address, Street, Edinburgh</p>
 
+                <h2>Points</h2>
                 <div class="info">Set a status below to update the grid:</div>
                 <div>
                     <select id="pub-select">
@@ -87,6 +88,10 @@
                         <option value="4">Not visited: +3</option>
                     </select>
                 </div>
+
+                <h2>Form completion</h2>
+                <div class="info">Tick this box after you have submitted the Google form</div>
+                <input type="checkbox" id="pub-form-check" /> <label for="pub-form-check">Form submitted</label>
             </div>
         </div>
         <script type="module" src="map.ts"></script>
