@@ -80,12 +80,16 @@
                 <div>
                     <select id="pub-select">
                         <option value="0">Not visited</option>
-                        <option value="-1">Visited: -1</option>
-                        <option value="1">Visited: +1</option>
-                        <option value="3">Visited: +3</option>
-                        <option value="-2">Not visited: -1</option>
-                        <option value="2">Not visited: +1</option>
-                        <option value="4">Not visited: +3</option>
+                        <optgroup label="Visited">
+                            <option value="-1">-1</option>
+                            <option value="1">+1</option>
+                            <option value="3">+3</option>
+                        </optgroup>
+                        <optgroup label="Not visited">
+                            <option value="-2">-1</option>
+                            <option value="2">+1</option>
+                            <option value="4">+3</option>
+                        </optgroup>
                     </select>
                 </div>
 
