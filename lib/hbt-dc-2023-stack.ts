@@ -65,6 +65,9 @@ export class HbtDc2023Stack extends cdk.Stack {
                 cachedMethods: CachedMethods.CACHE_GET_HEAD,
                 cachePolicy: CachePolicy.CACHING_OPTIMIZED,
             },
+            additionalBehaviors: {
+                "pubs.json": noCacheBehaviour,
+            },
             priceClass: PriceClass.PRICE_CLASS_100,
             httpVersion: HttpVersion.HTTP2_AND_3,
             domainNames: domainNames,
@@ -75,6 +78,7 @@ export class HbtDc2023Stack extends cdk.Stack {
             ),
             defaultRootObject: "index.html",
         });
+        cfDist.grantCreateInvalidation(cicdRole);
 
         domainNames.forEach((dn) => {
             const id = "ARecord-" + dn.split(".")[0];

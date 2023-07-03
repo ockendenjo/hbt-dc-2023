@@ -603,7 +603,8 @@
             "lat": 55.94550,
             "lon": -3.24291,
             "name": "Hampton",
-            "address": "14 Corstorphine Road, EH12 6HN"
+            "address": "14 Corstorphine Road, EH12 6HN",
+            "visited": true
         },
         {
             "id": 82,
@@ -1033,7 +1034,8 @@
             "lat": 55.945375968143,
             "lon": -3.233838660049,
             "name": "Roseburn Bar",
-            "address": "1 Roseburn Terrace, EH12 5NG"
+            "address": "1 Roseburn Terrace, EH12 5NG",
+            "visited": true
         },
         {
             "id": 140,
@@ -1363,7 +1365,8 @@
             "lat": 55.943,
             "lon": -3.2822,
             "name": "The White Lady",
-            "address": "92-98 St John's Road, EH12 8AT"
+            "address": "92-98 St John's Road, EH12 8AT",
+            "visited": true
         },
         {
             "id": 185,
@@ -1393,7 +1396,8 @@
             "lat": 55.942115,
             "lon": -3.281396,
             "name": "Winstons",
-            "address": "20 Kirk Loan, EH12 7HD"
+            "address": "20 Kirk Loan, EH12 7HD",
+            "visited": true
         },
         {
             "id": 189,
