@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function setPubStyles(pub: PubData) {
-        const className = getCellClassName(pub.points, pub.formDone);
+        const className = getCellClassName(pub.points, pub.formDone, pub.visited);
         if (pub.gridCell) {
             pub.gridCell.className = className;
         }
@@ -223,13 +223,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function getCellClassName(points: number, formDone: boolean): string {
-        if (formDone) {
-            console.log("done");
-        }
+    function getCellClassName(points: number, formDone: boolean, visited: boolean): string {
         const pointsClassName = getPointsClassName(points);
         const doneClassName = formDone ? "submitted" : "";
-        return [pointsClassName, doneClassName].filter((s) => s).join(" ");
+        const visitedClassName = visited ? "visited" : "";
+        return [pointsClassName, doneClassName, visitedClassName].filter((s) => s).join(" ");
     }
 
     function getPointsClassName(points: number): string {

@@ -10,6 +10,7 @@ export type Pub = {
     lon: number;
     name: string;
     address: string;
+    visited?: boolean;
 };
 
 export type PubData = {
