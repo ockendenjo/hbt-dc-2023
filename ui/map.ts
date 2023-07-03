@@ -13,6 +13,7 @@ import {Point} from "ol/geom";
 import {Fill, Stroke, Style} from "ol/style";
 import CircleStyle from "ol/style/Circle";
 import {StorageService} from "./ts/StorageService";
+import {getFirstVisitText} from "./ts/first-visit";
 
 document.addEventListener("DOMContentLoaded", () => {
     const osmLayer = new TileLayer({
@@ -189,6 +190,8 @@ document.addEventListener("DOMContentLoaded", () => {
         selectElem.value = String(pub.points);
         const checkElem = document.getElementById("pub-form-check") as HTMLInputElement;
         checkElem.checked = Boolean(pub.formDone);
+
+        document.getElementById("first-visit-text").textContent = getFirstVisitText(pub);
 
         selectElem.onchange = () => {
             const newPoints = Number(selectElem.value);
