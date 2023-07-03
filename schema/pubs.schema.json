@@ -24,6 +24,9 @@
                     },
                     "address": {
                         "type": "string"
+                    },
+                    "visited": {
+                        "type": "boolean"
                     }
                 },
                 "required": [
