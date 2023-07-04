@@ -5,7 +5,8 @@
             "lat": 55.93953,
             "lon": -3.17958,
             "name": "The Abbey",
-            "address": "65 South Clerk Street, EH8 9PP"
+            "address": "65 South Clerk Street, EH8 9PP",
+            "visited": true
         },
         {
             "id": 2,
@@ -228,7 +229,8 @@
             "lat": 55.94735,
             "lon": -3.18531,
             "name": "Brass Monkey (Southside)",
-            "address": "14 Drummond Street, EH8 9TU"
+            "address": "14 Drummond Street, EH8 9TU",
+            "visited": true
         },
         {
             "id": 32,
@@ -1080,7 +1082,8 @@
             "lat": 55.9383,
             "lon": -3.174,
             "name": "The Salisbury Arms",
-            "address": "58 Dalkeith Road, EH16 5AD"
+            "address": "58 Dalkeith Road, EH16 5AD",
+            "visited": true
         },
         {
             "id": 146,
