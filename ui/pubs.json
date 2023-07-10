@@ -145,7 +145,8 @@
             "lat": 55.95587,
             "lon": -3.16423,
             "name": "Bellfield Brewery Tap Room",
-            "address": "46 Stanley Place, EH7 5TB"
+            "address": "46 Stanley Place, EH7 5TB",
+            "visited": true
         },
         {
             "id": 21,
@@ -296,7 +297,8 @@
             "lat": 55.95084,
             "lon": -3.18246,
             "name": "The Canons' Gait",
-            "address": "232 Canongate, EH8 8DQ"
+            "address": "232 Canongate, EH8 8DQ",
+            "visited": true
         },
         {
             "id": 41,
@@ -475,7 +477,8 @@
             "lat": 55.95486,
             "lon": -3.11062,
             "name": "The Esplanade",
-            "address": "62 Bath Street, EH15 1HF"
+            "address": "62 Bath Street, EH15 1HF",
+            "visited": true
         },
         {
             "id": 65,
@@ -514,7 +517,8 @@
             "lat": 55.95509,
             "lon": -3.11795,
             "name": "Foresters Guild",
-            "address": "40 Portobello High Street, EH15 1DA"
+            "address": "40 Portobello High Street, EH15 1DA",
+            "visited": true
         },
         {
             "id": 70,
@@ -790,7 +794,8 @@
             "lat": 55.951037808972,
             "lon": -3.18185364418,
             "name": "Mackays on the Mile",
-            "address": "223 Canongate, EH8 8BJ"
+            "address": "223 Canongate, EH8 8BJ",
+            "visited": true
         },
         {
             "id": 107,
@@ -1156,7 +1161,8 @@
             "lat": 55.90768,
             "lon": -3.258203,
             "name": "The Spylaw",
-            "address": "27 Spylaw Street, EH13 0JT"
+            "address": "27 Spylaw Street, EH13 0JT",
+            "visited": true
         },
         {
             "id": 156,
@@ -1316,7 +1322,8 @@
             "lat": 55.9515,
             "lon": -3.1805,
             "name": "Tolbooth Tavern",
-            "address": "167 Canongate, EH8 8BN"
+            "address": "167 Canongate, EH8 8BN",
+            "visited": true
         },
         {
             "id": 178,
