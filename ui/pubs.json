@@ -103,7 +103,8 @@
             "lat": 55.95752,
             "lon": -3.20720,
             "name": "The Bailie",
-            "address": "2 St Stephen Street, EH3 5AL"
+            "address": "2 St Stephen Street, EH3 5AL",
+            "visited": true
         },
         {
             "id": 15,
@@ -320,7 +321,8 @@
             "lat": 55.95912,
             "lon": -3.19047,
             "name": "Cask & Barrel (New Town)",
-            "address": "115 Broughton Street, EH1 3RZ"
+            "address": "115 Broughton Street, EH1 3RZ",
+            "visited": true
         },
         {
             "id": 44,
@@ -989,7 +991,8 @@
             "lat": 55.9541,
             "lon": -3.1168,
             "name": "Portobello Tap",
-            "address": "87 Portobello High Street, EH15 1AW"
+            "address": "87 Portobello High Street, EH15 1AW",
+            "visited": true
         },
         {
             "id": 133,
