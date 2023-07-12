@@ -12,12 +12,15 @@ import {
     PriceClass,
     ViewerProtocolPolicy,
 } from "aws-cdk-lib/aws-cloudfront";
-import {S3Origin} from "aws-cdk-lib/aws-cloudfront-origins";
+import {HttpOrigin, S3Origin} from "aws-cdk-lib/aws-cloudfront-origins";
 import {Certificate} from "aws-cdk-lib/aws-certificatemanager";
 import {ARecord, HostedZone, RecordTarget} from "aws-cdk-lib/aws-route53";
 import {CloudFrontTarget} from "aws-cdk-lib/aws-route53-targets";
 import {Role, WebIdentityPrincipal} from "aws-cdk-lib/aws-iam";
 import {Duration} from "aws-cdk-lib";
+import {HandleUploadLambda} from "./handle-upload-lambda";
+import {getRole} from "./lambda-role";
+import {HttpApi} from "@aws-cdk/aws-apigatewayv2-alpha";
 
 export class HbtDc2023Stack extends cdk.Stack {
     constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -26,6 +29,16 @@ export class HbtDc2023Stack extends cdk.Stack {
         const bucket = new Bucket(this, "Bucket", {
             bucketName: "dc2023.hbt.ockenden.io",
         });
+        const dataBucket = new Bucket(this, "DataBucket", {
+            bucketName: "data.dc2023.hbt.ockenden.io",
+        });
+        const role = getRole(this, dataBucket);
+
+        const httpApi = new HttpApi(this, "HttpApi", {
+            apiName: "hbt-dc",
+        });
+
+        const uploader = new HandleUploadLambda(this, "HandleUploadLambda", httpApi, role, dataBucket);
 
         const hostedZone = HostedZone.fromLookup(this, "HostedZone", {domainName: "ockenden.io"});
 
@@ -37,6 +50,14 @@ export class HbtDc2023Stack extends cdk.Stack {
             viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
             allowedMethods: AllowedMethods.ALLOW_GET_HEAD,
             cachedMethods: CachedMethods.CACHE_GET_HEAD,
+            cachePolicy: CachePolicy.CACHING_DISABLED,
+        };
+
+        const uploadBehaviour: BehaviorOptions = {
+            origin: new HttpOrigin(httpApi.apiId + ".execute-api.eu-west-1.amazonaws.com", {}),
+            compress: true,
+            viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+            allowedMethods: AllowedMethods.ALLOW_ALL,
             cachePolicy: CachePolicy.CACHING_DISABLED,
         };
 
@@ -67,6 +88,7 @@ export class HbtDc2023Stack extends cdk.Stack {
             },
             additionalBehaviors: {
                 "pubs.json": noCacheBehaviour,
+                "upload/*": uploadBehaviour,
             },
             priceClass: PriceClass.PRICE_CLASS_100,
             httpVersion: HttpVersion.HTTP2_AND_3,

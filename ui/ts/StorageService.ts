@@ -1,3 +1,8 @@
+import * as crypto from "crypto";
+import {Upload, UploadPub} from "./types";
+
+const LS_KEY_ID = "ID";
+
 export class StorageService {
     private pointsMap = new Map<number, number>();
     private formMap = new Map<number, boolean>();
@@ -21,7 +26,6 @@ export class StorageService {
         Object.entries(sd).forEach(([k, v]) => {
             this.formMap.set(Number(k), Boolean(v));
         });
-        console.log(this.formMap);
     }
 
     public getPoints(pubId: number): number {
@@ -31,6 +35,7 @@ export class StorageService {
     public setPoints(pubId: number, points: number): void {
         this.pointsMap.set(pubId, points);
         this.writePoints();
+        this.upload();
     }
 
     public getFormStatus(pubId: number): boolean {
@@ -40,6 +45,7 @@ export class StorageService {
     public setFormStatus(pubId: number, checked: boolean): void {
         this.formMap.set(pubId, checked);
         this.writeForm();
+        this.upload();
     }
 
     private writePoints(): void {
@@ -61,4 +67,68 @@ export class StorageService {
         });
         localStorage.setItem("formData", JSON.stringify(data));
     }
+
+    public getUUID() {
+        let id = localStorage.getItem(LS_KEY_ID);
+        if (!id) {
+            id = generateUUID();
+            localStorage.setItem(LS_KEY_ID, id);
+        }
+        return id;
+    }
+
+    public needUpload(): boolean {
+        let id = localStorage.getItem(LS_KEY_ID);
+        return !id;
+    }
+
+    private getPayload(): Upload {
+        const uploadPubs: UploadPub[] = [];
+
+        const keySet = new Set([...this.formMap.keys(), ...this.pointsMap.keys()]);
+        keySet.forEach((id) => {
+            const form = this.formMap.get(id);
+            const points = getStateValue(this.pointsMap.get(id) ?? 0);
+            uploadPubs.push({id, form: Boolean(form), points});
+        });
+
+        return {pubs: uploadPubs};
+    }
+
+    public upload(): void {
+        const id = this.getUUID();
+        const body = this.getPayload();
+        fetch(`/upload/${id}`, {method: "POST", body: JSON.stringify(body)}).catch((e) => {
+            console.error(e);
+        });
+    }
 }
+
+const generateUUID = () => {
+    let d = new Date().getTime(),
+        d2 = (typeof performance !== "undefined" && performance.now && performance.now() * 1000) || 0;
+    return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
+        let r = Math.random() * 16;
+        if (d > 0) {
+            r = (d + r) % 16 | 0;
+            d = Math.floor(d / 16);
+        } else {
+            r = (d2 + r) % 16 | 0;
+            d2 = Math.floor(d2 / 16);
+        }
+        return (c == "x" ? r : (r & 0x7) | 0x8).toString(16);
+    });
+};
+
+const getStateValue = (points: number): number => {
+    switch (points) {
+        case -1:
+            return -1;
+        case 1:
+            return 1;
+        case 3:
+            return 3;
+        default:
+            return 0;
+    }
+};

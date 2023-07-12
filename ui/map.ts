@@ -32,6 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
     mapView.setZoom(12);
 
     const storageSvc = new StorageService();
+    if (storageSvc.needUpload()) {
+        storageSvc.upload();
+    }
 
     function initialiseMap() {
         const map = new ol.Map({

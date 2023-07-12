@@ -28,4 +28,12 @@ export type Tab = {
     activate?: () => void;
 };
 
-export type StoredData = Record<string, number>;
+export type Upload = {
+    pubs: UploadPub[];
+};
+
+export type UploadPub = {
+    id: number;
+    points: number;
+    form: boolean;
+};

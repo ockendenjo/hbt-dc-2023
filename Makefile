@@ -1,3 +1,5 @@
+.PHONY: clean format deploy tsc test
+
 clean:
 	find lib/ -name "*.d.ts" -delete
 	find lib/ -name "*.js" -delete
@@ -14,3 +16,6 @@ deploy:
 
 tsc:
 	npx tsc lib/*.ts
+
+test:
+	npm test

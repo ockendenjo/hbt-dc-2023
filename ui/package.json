@@ -2,7 +2,7 @@
   "name": "src2",
   "version": "1.0.0",
   "scripts": {
-    "start": "vite --host",
+    "start": "vite --host --config vite.config.js",
     "build": "vite build",
     "serve": "vite preview"
   },
