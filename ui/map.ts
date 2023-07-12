@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const visitedStyle = new Style({
         image: new CircleStyle({
-            radius: 7,
+            radius: 5,
             fill: new Fill({color: "#C0C0C0"}),
             stroke: new Stroke({color: "white", width: 2}),
         }),
@@ -173,11 +173,21 @@ document.addEventListener("DOMContentLoaded", () => {
             const myFeature = new Feature(featureConfig);
             p.feature = myFeature;
             myFeature.setStyle(style);
+            mySource.addFeature(myFeature);
+        });
 
+        pubs.sort((a, b) => {
+            const aValue = a.visited ? 1 : 0;
+            const bValue = b.visited ? 1 : 0;
+            return bValue - aValue;
+        });
+        pubs.forEach((p) => {
+            const featureConfig = {
+                geometry: new Point(fromLonLat([p.lon, p.lat])),
+                pub: p,
+            };
             const hbtFeature = new Feature(featureConfig);
             hbtFeature.setStyle(p.visited ? visitedStyle : style);
-
-            mySource.addFeature(myFeature);
             hbtSource.addFeature(hbtFeature);
         });
     }
@@ -325,13 +335,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function setupMapSelect() {
         let elementById = document.getElementById("map-select") as HTMLSelectElement;
-        elementById.onchange = () => {
+        const onChange = () => {
             const value = elementById.value;
             const layer = value === "my" ? myLayer : hbtLayer;
             const notLayer = value === "my" ? hbtLayer : myLayer;
             notLayer.setVisible(false);
             layer.setVisible(true);
         };
+        elementById.onchange = onChange;
+        onChange();
     }
 
     setupTabs();
