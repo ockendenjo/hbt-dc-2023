@@ -1157,7 +1157,8 @@
             "lat": 55.9453,
             "lon": -3.1836,
             "name": "The Southsider",
-            "address": "3-7 West Richmond Street, EH8 9EF"
+            "address": "3-7 West Richmond Street, EH8 9EF",
+            "visited": true
         },
         {
             "id": 155,
