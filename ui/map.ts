@@ -20,8 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
         source: new OSM(),
         opacity: 0.6,
     });
-    const vectorSource = new VectorSource({wrapX: true});
-    const vectorLayer = new VectorLayer({source: vectorSource});
+
+    const mySource = new VectorSource({wrapX: true});
+    const myLayer = new VectorLayer({source: mySource, visible: true});
+
+    const hbtSource = new VectorSource({wrapX: true});
+    const hbtLayer = new VectorLayer({source: hbtSource, visible: false});
 
     const mapView = new View({maxZoom: 19});
     mapView.setCenter(fromLonLat([-3.18985, 55.95285]));
@@ -33,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const map = new ol.Map({
             controls: defaultControls().extend([]),
             target: "map",
-            layers: [osmLayer, vectorLayer],
+            layers: [osmLayer, myLayer, hbtLayer],
             keyboardEventTarget: document,
             view: mapView,
         });
@@ -166,10 +170,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 geometry: new Point(fromLonLat([p.lon, p.lat])),
                 pub: p,
             };
-            const iconFeature = new Feature(featureConfig);
-            p.feature = iconFeature;
-            iconFeature.setStyle(style);
-            vectorSource.addFeature(iconFeature);
+            const myFeature = new Feature(featureConfig);
+            p.feature = myFeature;
+            myFeature.setStyle(style);
+
+            const hbtFeature = new Feature(featureConfig);
+            hbtFeature.setStyle(p.visited ? visitedStyle : style);
+
+            mySource.addFeature(myFeature);
+            hbtSource.addFeature(hbtFeature);
         });
     }
 
@@ -314,7 +323,19 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener("popstate", checkActiveTab);
     }
 
+    function setupMapSelect() {
+        let elementById = document.getElementById("map-select") as HTMLSelectElement;
+        elementById.onchange = () => {
+            const value = elementById.value;
+            const layer = value === "my" ? myLayer : hbtLayer;
+            const notLayer = value === "my" ? hbtLayer : myLayer;
+            notLayer.setVisible(false);
+            layer.setVisible(true);
+        };
+    }
+
     setupTabs();
+    setupMapSelect();
     checkActiveTab();
 });
 

@@ -150,3 +150,7 @@ td:hover {
     font-weight: bold;
     font-size: 1.2em;
 }
+
+.map-select-div {
+    padding: 8px;
+}
