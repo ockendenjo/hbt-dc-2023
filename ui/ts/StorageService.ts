@@ -1,15 +1,16 @@
-import * as crypto from "crypto";
 import {Upload, UploadPub} from "./types";
 
 const LS_KEY_ID = "ID";
 
 export class StorageService {
     private pointsMap = new Map<number, number>();
+    private scoreMap = new Map<number, number>();
     private formMap = new Map<number, boolean>();
 
     constructor() {
         this.readPoints();
         this.readForm();
+        this.readScores();
     }
 
     private readPoints(): void {
@@ -17,6 +18,14 @@ export class StorageService {
         const sd = JSON.parse(lsd);
         Object.entries(sd).forEach(([k, v]) => {
             this.pointsMap.set(Number(k), v as number);
+        });
+    }
+
+    private readScores(): void {
+        const lsd = localStorage.getItem("scores") ?? "{}";
+        const sd = JSON.parse(lsd);
+        Object.entries(sd).forEach(([k, v]) => {
+            this.scoreMap.set(Number(k), v as number);
         });
     }
 
@@ -32,9 +41,23 @@ export class StorageService {
         return this.pointsMap.get(pubId) || 0;
     }
 
+    public getScore(pubId: number): number {
+        return this.scoreMap.get(pubId) ?? 0;
+    }
+
     public setPoints(pubId: number, points: number): void {
         this.pointsMap.set(pubId, points);
         this.writePoints();
+        this.upload();
+    }
+
+    public setScore(pubId: number, score: number): void {
+        if (score) {
+            this.scoreMap.set(pubId, score);
+        } else {
+            this.scoreMap.delete(pubId);
+        }
+        this.writeScore();
         this.upload();
     }
 
@@ -56,6 +79,16 @@ export class StorageService {
             }
         });
         localStorage.setItem("data", JSON.stringify(data));
+    }
+
+    private writeScore(): void {
+        const data: Record<string, number> = {};
+        this.scoreMap.forEach((v, k) => {
+            if (v) {
+                data[String(k)] = v;
+            }
+        });
+        localStorage.setItem("scores", JSON.stringify(data));
     }
 
     private writeForm(): void {
@@ -89,7 +122,8 @@ export class StorageService {
         keySet.forEach((id) => {
             const form = this.formMap.get(id);
             const points = getStateValue(this.pointsMap.get(id) ?? 0);
-            uploadPubs.push({id, form: Boolean(form), points});
+            const score = this.scoreMap.get(id) ?? 0;
+            uploadPubs.push({id, form: Boolean(form), points, score});
         });
 
         return {pubs: uploadPubs};

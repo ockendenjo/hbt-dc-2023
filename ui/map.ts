@@ -85,7 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 return pubs.map((p) => {
                     const points = storageSvc.getPoints(p.id);
                     const formDone = storageSvc.getFormStatus(p.id);
-                    return {...p, points: points, formDone} as PubData;
+                    const score = storageSvc.getScore(p.id);
+                    return {...p, points: points, formDone, score} as PubData;
                 });
             });
     }
@@ -212,6 +213,8 @@ document.addEventListener("DOMContentLoaded", () => {
         selectElem.value = String(pub.points);
         const checkElem = document.getElementById("pub-form-check") as HTMLInputElement;
         checkElem.checked = Boolean(pub.formDone);
+        const scoreElem = document.getElementById("score-select") as HTMLSelectElement;
+        scoreElem.value = String(pub.score);
 
         document.getElementById("first-visit-text").textContent = getFirstVisitText(pub);
 
@@ -220,6 +223,12 @@ document.addEventListener("DOMContentLoaded", () => {
             storageSvc.setPoints(pub.id, newPoints);
             pub.points = newPoints;
             setPubStyles(pub);
+        };
+
+        scoreElem.onchange = () => {
+            const newScore = Number(scoreElem.value);
+            pub.score = newScore;
+            storageSvc.setScore(pub.id, newScore);
         };
 
         checkElem.onchange = () => {

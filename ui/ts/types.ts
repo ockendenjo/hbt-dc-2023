@@ -19,6 +19,7 @@ export type PubData = {
     listCell: HTMLDivElement;
     feature?: Feature;
     formDone?: boolean;
+    score: number;
 } & Pub;
 
 export type Tab = {
@@ -36,4 +37,5 @@ export type UploadPub = {
     id: number;
     points: number;
     form: boolean;
+    score: number;
 };
