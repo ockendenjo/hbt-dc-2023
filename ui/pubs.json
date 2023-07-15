@@ -111,14 +111,16 @@
             "lat": 55.94881,
             "lon": -3.18659,
             "name": "Bannermans",
-            "address": "212 Cowgate, EH1 1NQ"
+            "address": "212 Cowgate, EH1 1NQ",
+            "visited": true
         },
         {
             "id": 16,
             "lat": 55.94936,
             "lon": -3.18681,
             "name": "The Banshee Labyrinth",
-            "address": "29-35 Niddry Street, EH1 1LG"
+            "address": "29-35 Niddry Street, EH1 1LG",
+            "visited": true
         },
         {
             "id": 17,
@@ -413,14 +415,16 @@
             "lat": 55.94368,
             "lon": -3.05791,
             "name": "The David MacBeth Moir",
-            "address": "Bridge Street, EH21 6AG"
+            "address": "Bridge Street, EH21 6AG",
+            "visited": true
         },
         {
             "id": 56,
             "lat": 55.94951,
             "lon": -3.19290,
             "name": "Deacon Brodies Tavern",
-            "address": "435 Lawnmarket, EH1 2NT"
+            "address": "435 Lawnmarket, EH1 2NT",
+            "visited": true
         },
         {
             "id": 57,
@@ -472,7 +476,8 @@
             "lat": 55.94917,
             "lon": -3.19439,
             "name": "Ensign Ewart",
-            "address": "521 Lawnmarket, EH1 2PE"
+            "address": "521 Lawnmarket, EH1 2PE",
+            "visited": true
         },
         {
             "id": 64,
@@ -580,7 +585,8 @@
             "lat": 55.94688,
             "lon": -3.19142,
             "name": "Greyfriars Bobby",
-            "address": "34 Candlemaker Row, EH1 2QE"
+            "address": "34 Candlemaker Row, EH1 2QE",
+            "visited": true
         },
         {
             "id": 78,
@@ -781,7 +787,8 @@
             "lat": 55.947825,
             "lon": -3.195273,
             "name": "The Last Drop",
-            "address": "74-78 Grassmarket, EH1 2JR"
+            "address": "74-78 Grassmarket, EH1 2JR",
+            "visited": true
         },
         {
             "id": 105,
@@ -851,7 +858,8 @@
             "lat": 55.895132,
             "lon": -3.096431,
             "name": "Melville Inn",
-            "address": "By Dobbies Nursery, EH18 1AR"
+            "address": "By Dobbies Nursery, EH18 1AR",
+            "visited": true
         },
         {
             "id": 114,
@@ -948,7 +956,8 @@
             "lat": 55.949133918842,
             "lon": -3.098640289688,
             "name": "The Ormelie",
-            "address": "44 Joppa Road, EH15 2ET"
+            "address": "44 Joppa Road, EH15 2ET",
+            "visited": true
         },
         {
             "id": 127,
@@ -1105,7 +1114,8 @@
             "lat": 55.946068,
             "lon": -3.19128,
             "name": "Sandy Bell's",
-            "address": "25 Forrest Road, EH1 2QH"
+            "address": "25 Forrest Road, EH1 2QH",
+            "visited": true
         },
         {
             "id": 148,
@@ -1195,7 +1205,8 @@
             "lat": 55.944151,
             "lon": -3.057204,
             "name": "Staggs",
-            "address": "81 North High Street, EH21 6JE"
+            "address": "81 North High Street, EH21 6JE",
+            "visited": true
         },
         {
             "id": 160,
@@ -1372,7 +1383,8 @@
             "lat": 55.94749,
             "lon": -3.196686,
             "name": "The White Hart Inn",
-            "address": "34 Grassmarket, EH1 2JU"
+            "address": "34 Grassmarket, EH1 2JU",
+            "visited": true
         },
         {
             "id": 184,
