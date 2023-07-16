@@ -1,13 +1,13 @@
 import {AggregateDataLambda} from "./aggregate-data-lambda";
 import {runLogic, S3File} from "./aggregate-data-lambda.function";
-import {CombinedDataFile, CombinedPub, UploadPub} from "../ui/ts/types";
+import {PubsStatsFile, PubStats, UploadPub} from "../ui/ts/types";
 
 describe(AggregateDataLambda.name, () => {
     const tests = [
         {
             name: "Should ignore zero-value scores",
-            writeFile: (payload: CombinedDataFile) => {
-                const pub = payload.pubs.find((p) => p.id === 1) as CombinedPub;
+            writeFile: (payload: PubsStatsFile) => {
+                const pub = payload.pubs.find((p) => p.id === 1) as PubStats;
                 expect(pub.minRating).toBe(0);
                 expect(pub.maxRating).toBe(0);
                 expect(pub.meanRating).toBe(0);
@@ -16,8 +16,8 @@ describe(AggregateDataLambda.name, () => {
         },
         {
             name: "Should calculate min/max/mean score",
-            writeFile: (payload: CombinedDataFile) => {
-                const pub = payload.pubs.find((p) => p.id === 2) as CombinedPub;
+            writeFile: (payload: PubsStatsFile) => {
+                const pub = payload.pubs.find((p) => p.id === 2) as PubStats;
                 expect(pub.minRating).toBe(3);
                 expect(pub.maxRating).toBe(4);
                 expect(pub.meanRating).toBe(3.5);
@@ -26,24 +26,24 @@ describe(AggregateDataLambda.name, () => {
         },
         {
             name: "Should calculate visit count",
-            writeFile: (payload: CombinedDataFile) => {
-                const pub = payload.pubs.find((p) => p.id === 2) as CombinedPub;
+            writeFile: (payload: PubsStatsFile) => {
+                const pub = payload.pubs.find((p) => p.id === 2) as PubStats;
                 expect(pub.visitCount).toBe(2);
                 return Promise.resolve();
             },
         },
         {
             name: "Should set visitCount to zero for pubs without points",
-            writeFile: (payload: CombinedDataFile) => {
-                const pub = payload.pubs.find((p) => p.id === 1) as CombinedPub;
+            writeFile: (payload: PubsStatsFile) => {
+                const pub = payload.pubs.find((p) => p.id === 1) as PubStats;
                 expect(pub.visitCount).toBe(0);
                 return Promise.resolve();
             },
         },
         {
             name: "Should set visitCount to zero for unvisited pubs",
-            writeFile: (payload: CombinedDataFile) => {
-                const pub = payload.pubs.find((p) => p.id === 12) as CombinedPub;
+            writeFile: (payload: PubsStatsFile) => {
+                const pub = payload.pubs.find((p) => p.id === 12) as PubStats;
                 expect(pub.visitCount).toBe(0);
                 return Promise.resolve();
             },

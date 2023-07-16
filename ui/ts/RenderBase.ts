@@ -1,5 +1,5 @@
 import {Renderer} from "./layerDef";
-import {CombinedPub, PubData} from "./types";
+import {PubStats, PubData} from "./types";
 import VectorSource from "ol/source/Vector";
 import {Fill, Stroke, Style} from "ol/style";
 import CircleStyle from "ol/style/Circle";
@@ -10,18 +10,13 @@ import {fromLonLat} from "ol/proj";
 export abstract class RenderBase implements Renderer {
     protected source: VectorSource;
     private featureMap = new Map<number, Feature>();
-    protected statsMap = new Map<number, CombinedPub>();
 
     constructor(source: VectorSource) {
         this.source = source;
     }
 
-    render(pubs: PubData[], stats: CombinedPub[]) {
-        stats.forEach((s) => {
-            this.statsMap.set(s.id, s);
-        });
-
-        this.sort(pubs, stats).forEach((p) => {
+    render(pubs: PubData[]) {
+        this.sort(this.filter(pubs)).forEach((p) => {
             const featureConfig = {
                 geometry: new Point(fromLonLat([p.lon, p.lat])),
                 pub: p,
@@ -35,10 +30,16 @@ export abstract class RenderBase implements Renderer {
 
     updateStyling(pub: PubData) {
         const feature = this.featureMap.get(pub.id);
-        this.setStyle(pub, feature);
+        if (feature) {
+            this.setStyle(pub, feature);
+        }
     }
 
-    abstract sort(pubs: PubData[], stats: CombinedPub[]): PubData[];
+    abstract sort(pubs: PubData[]): PubData[];
+
+    protected filter(pubs: PubData[]): PubData[] {
+        return pubs;
+    }
 
     abstract setStyle(pub: PubData, feature: Feature): void;
 }

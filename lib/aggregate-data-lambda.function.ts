@@ -1,5 +1,5 @@
 import {GetObjectCommand, ListObjectsV2Command, PutObjectCommand, S3Client} from "@aws-sdk/client-s3";
-import {CombinedDataFile, CombinedPub, UploadFile, UploadPub} from "../ui/ts/types";
+import {PubsStatsFile, PubStats, UploadFile, UploadPub} from "../ui/ts/types";
 
 const config = {region: process.env.AWS_REGION};
 const s3 = new S3Client(config);
@@ -32,7 +32,7 @@ export const runLogic = async (
         }
     }
 
-    const combinedPubs: CombinedPub[] = [];
+    const combinedPubs: PubStats[] = [];
 
     for (let i = 1; i <= 192; i++) {
         let min = 0;
@@ -47,16 +47,16 @@ export const runLogic = async (
         }
         const visitCount = visitMap.get(i) || 0;
 
-        const cp: CombinedPub = {id: i, maxRating: max, minRating: min, meanRating: mean, visitCount};
+        const cp: PubStats = {id: i, maxRating: max, minRating: min, meanRating: mean, visitCount};
         combinedPubs.push(cp);
     }
 
     await writeS3File({pubs: combinedPubs});
 };
 
-type S3Writer = (payload: CombinedDataFile) => Promise<void>;
+type S3Writer = (payload: PubsStatsFile) => Promise<void>;
 
-async function writeFile(payload: CombinedDataFile): Promise<void> {
+async function writeFile(payload: PubsStatsFile): Promise<void> {
     return s3
         .send(
             new PutObjectCommand({

@@ -1,6 +1,6 @@
 import VectorLayer from "ol/layer/Vector";
 import VectorSource from "ol/source/Vector";
-import {CombinedPub, PubData} from "./types";
+import {PubStats, PubData} from "./types";
 
 export type LayerDef = {
     id: string;
@@ -14,6 +14,6 @@ export type LayerDef = {
 };
 
 export interface Renderer {
-    render(pubs: PubData[], stats: CombinedPub[]): void;
+    render(pubs: PubData[]): void;
     updateStyling(pub: PubData): void;
 }

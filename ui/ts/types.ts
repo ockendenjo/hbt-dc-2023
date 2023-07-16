@@ -17,6 +17,7 @@ export type PubData = {
     listCell: HTMLDivElement;
     formDone?: boolean;
     score: number;
+    stats: PubStats;
 } & Pub;
 
 export type Tab = {
@@ -37,11 +38,11 @@ export type UploadPub = {
     score: number;
 };
 
-export type CombinedDataFile = {
-    pubs: CombinedPub[];
+export type PubsStatsFile = {
+    pubs: PubStats[];
 };
 
-export type CombinedPub = {
+export type PubStats = {
     id: number;
     visitCount: number;
     minRating: number;

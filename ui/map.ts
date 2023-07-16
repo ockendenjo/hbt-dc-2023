@@ -8,13 +8,14 @@ import {fromLonLat} from "ol/proj";
 import {defaults as defaultControls} from "ol/control";
 import VectorSource from "ol/source/Vector";
 import VectorLayer from "ol/layer/Vector";
-import {CombinedDataFile, CombinedPub, Pub, PubData, PubFile, Tab} from "./ts/types";
+import {PubsStatsFile, PubStats, Pub, PubData, PubFile, Tab} from "./ts/types";
 import {StorageService} from "./ts/StorageService";
 import {getFirstVisitText} from "./ts/first-visit";
 import {LayerDef} from "./ts/layerDef";
 import {MyUnvisitedLayer} from "./ts/MyUnvisitedLayer";
 import {HBTUnvisitedLayer} from "./ts/HBTUnvisitedLayer";
 import {HBTRatingLayer} from "./ts/HBTRatingLayer";
+import {HBTVisitsLayer} from "./ts/HBTVisitsLayer";
 
 document.addEventListener("DOMContentLoaded", () => {
     const osmLayer = new TileLayer({
@@ -32,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             id: "hbt",
-            selectText: "HBT maybe unvisited",
+            selectText: "HBT pubs - unvisited",
             descText: "Brown dots are unvisited",
             visible: false,
             setupRenderer: (source) => new HBTUnvisitedLayer(source),
@@ -43,6 +44,13 @@ document.addEventListener("DOMContentLoaded", () => {
             descText: "Updated once per day",
             visible: false,
             setupRenderer: (source) => new HBTRatingLayer(source),
+        },
+        {
+            id: "visits",
+            selectText: "HBT pubs - total visits",
+            descText: "Updated once per day",
+            visible: false,
+            setupRenderer: (source) => new HBTVisitsLayer(source),
         },
     ];
 
@@ -88,9 +96,14 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const properties = feature.getProperties();
-            const pub = properties.pub as Pub;
+            const pub = properties.pub as PubData;
 
-            content.innerHTML = `<b>${pub.name}</b>`;
+            content.innerHTML = `<b>${pub.name}</b><p>Score: ${pub.stats.meanRating.toFixed(1)}<br>Visits: ${
+                pub.stats.visitCount
+            }</p><div id="popup-link">View details</div>`;
+            document.getElementById("popup-link").onclick = () => {
+                viewPubDetails(pub);
+            };
             overlay.setPosition(e.coordinate);
         });
 
@@ -102,7 +115,9 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     }
 
-    function loadPubs(): Promise<PubData[]> {
+    async function loadPubs(): Promise<PubData[]> {
+        const statsMap = await loadStats();
+
         return fetch("pubs.json")
             .then((r) => r.json())
             .then((j: PubFile) => j.pubs)
@@ -111,15 +126,23 @@ document.addEventListener("DOMContentLoaded", () => {
                     const points = storageSvc.getPoints(p.id);
                     const formDone = storageSvc.getFormStatus(p.id);
                     const score = storageSvc.getScore(p.id);
-                    return {...p, points: points, formDone, score} as PubData;
+                    const stats = statsMap.get(p.id);
+                    return {...p, points: points, formDone, score, stats} as PubData;
                 });
             });
     }
 
-    function loadStats(): Promise<CombinedPub[]> {
+    function loadStats(): Promise<Map<number, PubStats>> {
         return fetch("aggregate.json")
             .then((r) => r.json())
-            .then((j: CombinedDataFile) => j.pubs);
+            .then((j: PubsStatsFile) => j.pubs)
+            .then((pubs) => {
+                const statsMap = new Map<number, PubStats>();
+                pubs.forEach((p) => {
+                    statsMap.set(p.id, p);
+                });
+                return statsMap;
+            });
     }
 
     function loadGrid(): Promise<number[][]> {
@@ -127,10 +150,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function loadData() {
-        Promise.all([loadPubs(), loadGrid(), loadStats()]).then(([pubs, grid, stats]) => {
+        Promise.all([loadPubs(), loadGrid()]).then(([pubs, grid]) => {
             buildGrid(pubs, grid);
             buildList(pubs);
-            buildMap(pubs, stats);
+            buildMap(pubs);
             stylePubs(pubs);
         });
     }
@@ -183,11 +206,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("table-container").append(table);
     }
 
-    function buildMap(pubs: PubData[], stats: CombinedPub[]) {
+    function buildMap(pubs: PubData[]) {
         layerDefs.forEach((ld) => {
             const renderer = ld.setupRenderer(ld.source);
             ld.renderer = renderer;
-            renderer.render(pubs, stats);
+            renderer.render(pubs);
         });
     }
 

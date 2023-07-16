@@ -40,3 +40,10 @@
 .ol-popup-closer:after {
     content: "✖";
 }
+#popup-link {
+    color: blue;
+    cursor: pointer;
+}
+#popup-link:hover {
+    opacity: 0.5;
+}
