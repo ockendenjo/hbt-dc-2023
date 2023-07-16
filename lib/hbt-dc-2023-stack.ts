@@ -34,6 +34,7 @@ export class HbtDc2023Stack extends cdk.Stack {
             bucketName: "data.dc2023.hbt.ockenden.io",
         });
         const role = getRole(this, dataBucket);
+        bucket.grantWrite(role);
 
         const httpApi = new HttpApi(this, "HttpApi", {
             apiName: "hbt-dc",
