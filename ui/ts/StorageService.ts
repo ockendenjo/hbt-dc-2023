@@ -1,4 +1,4 @@
-import {Upload, UploadPub} from "./types";
+import {UploadFile, UploadPub} from "./types";
 
 const LS_KEY_ID = "ID";
 
@@ -115,7 +115,7 @@ export class StorageService {
         return !id;
     }
 
-    private getPayload(): Upload {
+    private getPayload(): UploadFile {
         const uploadPubs: UploadPub[] = [];
 
         const keySet = new Set([...this.formMap.keys(), ...this.pointsMap.keys()]);

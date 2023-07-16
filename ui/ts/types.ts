@@ -29,7 +29,7 @@ export type Tab = {
     activate?: () => void;
 };
 
-export type Upload = {
+export type UploadFile = {
     pubs: UploadPub[];
 };
 
@@ -38,4 +38,16 @@ export type UploadPub = {
     points: number;
     form: boolean;
     score: number;
+};
+
+export type CombinedDataFile = {
+    pubs: CombinedPub[];
+};
+
+export type CombinedPub = {
+    id: number;
+    visitCount: number;
+    minRating: number;
+    maxRating: number;
+    meanRating: number;
 };

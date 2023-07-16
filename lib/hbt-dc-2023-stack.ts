@@ -21,6 +21,7 @@ import {Duration} from "aws-cdk-lib";
 import {HandleUploadLambda} from "./handle-upload-lambda";
 import {getRole} from "./lambda-role";
 import {HttpApi} from "@aws-cdk/aws-apigatewayv2-alpha";
+import {AggregateDataLambda} from "./aggregate-data-lambda";
 
 export class HbtDc2023Stack extends cdk.Stack {
     constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -39,6 +40,7 @@ export class HbtDc2023Stack extends cdk.Stack {
         });
 
         const uploader = new HandleUploadLambda(this, "HandleUploadLambda", httpApi, role, dataBucket);
+        new AggregateDataLambda(this, "AggregateDataLambda", role, bucket, dataBucket);
 
         const hostedZone = HostedZone.fromLookup(this, "HostedZone", {domainName: "ockenden.io"});
 
