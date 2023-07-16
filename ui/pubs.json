@@ -316,7 +316,8 @@
             "lat": 55.97606,
             "lon": -3.16856,
             "name": "The Carriers Quarters",
-            "address": "42 Bernard Street, EH6 6PR"
+            "address": "42 Bernard Street, EH6 6PR",
+            "visited": true
         },
         {
             "id": 43,
@@ -766,7 +767,8 @@
             "lat": 55.97616,
             "lon": -3.16964,
             "name": "King's Wark",
-            "address": "36 The Shore, EH6 6QU"
+            "address": "36 The Shore, EH6 6QU",
+            "visited": true
         },
         {
             "id": 102,
@@ -1107,7 +1109,8 @@
             "lat": 55.949243,
             "lon": -3.185469,
             "name": "Salt Horse",
-            "address": "57-61 Blackfriars Street, EH1 1NB"
+            "address": "57-61 Blackfriars Street, EH1 1NB",
+            "visited": true
         },
         {
             "id": 147,
@@ -1160,7 +1163,8 @@
             "lat": 55.97748,
             "lon": -3.169036,
             "name": "The Shore",
-            "address": "3 The Shore, EH6 6QW"
+            "address": "3 The Shore, EH6 6QW",
+            "visited": true
         },
         {
             "id": 154,
@@ -1293,7 +1297,8 @@
             "lat": 55.977464,
             "lon": -3.171407,
             "name": "Teuchters Landing",
-            "address": "1C Dock Place, EH6 6LU"
+            "address": "1C Dock Place, EH6 6LU",
+            "visited": true
         },
         {
             "id": 172,
