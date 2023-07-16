@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  test:
-    name: test
+  validate:
+    name: validate
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
@@ -22,8 +22,8 @@ jobs:
         run: |
           ./yajsv.linux.amd64 -s schema/pubs.schema.json ui/pubs.json
 
-  lint:
-    name: lint
+  test:
+    name: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
@@ -34,6 +34,9 @@ jobs:
 
       - name: Check formatting
         run: npx prettier --check .
+
+      - name: Run unit tests
+        run: npx jest
 
   build:
     name: build
@@ -66,7 +69,7 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
-    needs: [test, build]
+    needs: [validate, test, build]
     permissions:
       id-token: write   # This is required for requesting the JWT
       contents: read    # This is required for actions/checkout
