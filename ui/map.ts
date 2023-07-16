@@ -324,10 +324,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function setupMapSelect() {
         let elementById = document.getElementById("map-select") as HTMLSelectElement;
+        layerDefs.forEach((ld) => {
+            const opt = document.createElement("option") as HTMLOptionElement;
+            opt.value = ld.id;
+            opt.innerText = ld.selectText;
+            elementById.append(opt);
+        });
+        const descElement = document.getElementById("map-select-desc") as HTMLSpanElement;
+
         const onChange = () => {
             const value = elementById.value;
             layerDefs.forEach((ld) => {
-                ld.layer.setVisible(ld.id === value);
+                const visible = ld.id === value;
+                ld.layer.setVisible(visible);
+                if (visible) {
+                    descElement.textContent = ld.descText;
+                }
             });
         };
         elementById.onchange = onChange;
