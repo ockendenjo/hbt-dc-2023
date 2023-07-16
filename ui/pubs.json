@@ -587,7 +587,7 @@
             "lon": -3.19142,
             "name": "Greyfriars Bobby",
             "address": "34 Candlemaker Row, EH1 2QE",
-            "visited": true
+            "visited": false
         },
         {
             "id": 78,
