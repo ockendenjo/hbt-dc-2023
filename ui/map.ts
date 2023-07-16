@@ -1,7 +1,7 @@
 import "./map.css";
 import "./popup.css";
 import * as ol from "ol";
-import {Feature, Overlay, View} from "ol";
+import {Overlay, View} from "ol";
 import TileLayer from "ol/layer/Tile";
 import OSM from "ol/source/OSM";
 import {fromLonLat} from "ol/proj";
@@ -9,11 +9,11 @@ import {defaults as defaultControls} from "ol/control";
 import VectorSource from "ol/source/Vector";
 import VectorLayer from "ol/layer/Vector";
 import {Pub, PubData, PubFile, Tab} from "./ts/types";
-import {Point} from "ol/geom";
-import {Fill, Stroke, Style} from "ol/style";
-import CircleStyle from "ol/style/Circle";
 import {StorageService} from "./ts/StorageService";
 import {getFirstVisitText} from "./ts/first-visit";
+import {LayerDef} from "./ts/layerDef";
+import {MyUnvisitedLayer} from "./ts/MyUnvisitedLayer";
+import {HBTUnvisitedLayer} from "./ts/HBTUnvisitedLayer";
 
 document.addEventListener("DOMContentLoaded", () => {
     const osmLayer = new TileLayer({
@@ -21,11 +21,28 @@ document.addEventListener("DOMContentLoaded", () => {
         opacity: 0.6,
     });
 
-    const mySource = new VectorSource({wrapX: true});
-    const myLayer = new VectorLayer({source: mySource, visible: true});
+    const layerDefs: LayerDef[] = [
+        {
+            id: "my",
+            selectText: "My unvisited pubs",
+            descText: "Brown dots are unvisited",
+            visible: true,
+            setupRenderer: (source) => new MyUnvisitedLayer(source),
+        },
+        {
+            id: "hbt",
+            selectText: "HBT maybe unvisited",
+            descText: "Brown dots are unvisited",
+            visible: false,
+            setupRenderer: (source) => new HBTUnvisitedLayer(source),
+        },
+    ];
 
-    const hbtSource = new VectorSource({wrapX: true});
-    const hbtLayer = new VectorLayer({source: hbtSource, visible: false});
+    layerDefs.forEach((ld) => {
+        const source = new VectorSource({wrapX: true});
+        ld.source = source;
+        ld.layer = new VectorLayer({source, visible: ld.visible});
+    });
 
     const mapView = new View({maxZoom: 19});
     mapView.setCenter(fromLonLat([-3.18985, 55.95285]));
@@ -40,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const map = new ol.Map({
             controls: defaultControls().extend([]),
             target: "map",
-            layers: [osmLayer, myLayer, hbtLayer],
+            layers: [osmLayer, ...layerDefs.map((l) => l.layer)],
             keyboardEventTarget: document,
             view: mapView,
         });
@@ -152,47 +169,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("table-container").append(table);
     }
 
-    const style = new Style({
-        image: new CircleStyle({
-            radius: 7,
-            fill: new Fill({color: "saddlebrown"}),
-            stroke: new Stroke({color: "white", width: 2}),
-        }),
-    });
-
-    const visitedStyle = new Style({
-        image: new CircleStyle({
-            radius: 5,
-            fill: new Fill({color: "#C0C0C0"}),
-            stroke: new Stroke({color: "white", width: 2}),
-        }),
-    });
-
     function buildMap(pubs: PubData[]) {
-        pubs.filter((p) => p.lon).forEach((p) => {
-            const featureConfig = {
-                geometry: new Point(fromLonLat([p.lon, p.lat])),
-                pub: p,
-            };
-            const myFeature = new Feature(featureConfig);
-            p.feature = myFeature;
-            myFeature.setStyle(style);
-            mySource.addFeature(myFeature);
-        });
-
-        pubs.sort((a, b) => {
-            const aValue = a.visited ? 1 : 0;
-            const bValue = b.visited ? 1 : 0;
-            return bValue - aValue;
-        });
-        pubs.forEach((p) => {
-            const featureConfig = {
-                geometry: new Point(fromLonLat([p.lon, p.lat])),
-                pub: p,
-            };
-            const hbtFeature = new Feature(featureConfig);
-            hbtFeature.setStyle(p.visited ? visitedStyle : style);
-            hbtSource.addFeature(hbtFeature);
+        layerDefs.forEach((ld) => {
+            const renderer = ld.setupRenderer(ld.source);
+            ld.renderer = renderer;
+            renderer.render(pubs);
         });
     }
 
@@ -248,13 +229,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (pub.listCell) {
             pub.listCell.className = className;
         }
-        if (pub.feature) {
-            if ([-1, 1, 3].includes(pub.points)) {
-                pub.feature.setStyle(visitedStyle);
-            } else {
-                pub.feature.setStyle(style);
-            }
-        }
+        layerDefs.forEach((ld) => {
+            ld.renderer.updateStyling(pub);
+        });
     }
 
     function getCellClassName(points: number, formDone: boolean, visited: boolean): string {
@@ -349,10 +326,9 @@ document.addEventListener("DOMContentLoaded", () => {
         let elementById = document.getElementById("map-select") as HTMLSelectElement;
         const onChange = () => {
             const value = elementById.value;
-            const layer = value === "my" ? myLayer : hbtLayer;
-            const notLayer = value === "my" ? hbtLayer : myLayer;
-            notLayer.setVisible(false);
-            layer.setVisible(true);
+            layerDefs.forEach((ld) => {
+                ld.layer.setVisible(ld.id === value);
+            });
         };
         elementById.onchange = onChange;
         onChange();

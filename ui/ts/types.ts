@@ -1,5 +1,3 @@
-import {Feature} from "ol";
-
 export type PubFile = {
     pubs: Pub[];
 };
@@ -17,7 +15,6 @@ export type PubData = {
     points: number;
     gridCell: HTMLTableCellElement;
     listCell: HTMLDivElement;
-    feature?: Feature;
     formDone?: boolean;
     score: number;
 } & Pub;
