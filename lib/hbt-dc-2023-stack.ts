@@ -22,6 +22,9 @@ import {HandleUploadLambda} from "./handle-upload-lambda";
 import {getRole} from "./lambda-role";
 import {HttpApi} from "@aws-cdk/aws-apigatewayv2-alpha";
 import {AggregateDataLambda} from "./aggregate-data-lambda";
+import {Rule, Schedule} from "aws-cdk-lib/aws-events";
+import {LambdaTarget} from "aws-cdk-lib/aws-elasticloadbalancingv2-targets";
+import {LambdaFunction} from "aws-cdk-lib/aws-events-targets";
 
 export class HbtDc2023Stack extends cdk.Stack {
     constructor(scope: Construct, id: string, props?: cdk.StackProps) {
@@ -41,7 +44,7 @@ export class HbtDc2023Stack extends cdk.Stack {
         });
 
         const uploader = new HandleUploadLambda(this, "HandleUploadLambda", httpApi, role, dataBucket);
-        new AggregateDataLambda(this, "AggregateDataLambda", role, bucket, dataBucket);
+        const aggregateLambda = new AggregateDataLambda(this, "AggregateDataLambda", role, bucket, dataBucket);
 
         const hostedZone = HostedZone.fromLookup(this, "HostedZone", {domainName: "ockenden.io"});
 
@@ -112,6 +115,11 @@ export class HbtDc2023Stack extends cdk.Stack {
                 zone: hostedZone,
                 recordName: dn + ".",
             });
+        });
+
+        new Rule(this, "AggregationRule", {
+            schedule: Schedule.cron({day: "*", hour: "0", minute: "0", month: "*", year: "*"}),
+            targets: [new LambdaFunction(aggregateLambda.function, {retryAttempts: 1})],
         });
     }
 }
