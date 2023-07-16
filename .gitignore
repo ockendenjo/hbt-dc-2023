@@ -8,3 +8,5 @@ coverage
 .cdk.staging
 cdk.out
 .idea
+
+ui/aggregate.json

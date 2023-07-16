@@ -1,0 +1,1348 @@
+{
+    "pubs": [
+        {
+            "id": 1,
+            "maxRating": 4,
+            "minRating": 3,
+            "meanRating": 3.3333333333333335,
+            "visitCount": 6
+        },
+        {
+            "id": 2,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 2
+        },
+        {
+            "id": 3,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 4,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 5,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 6,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 7,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 8,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 9,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 7
+        },
+        {
+            "id": 10,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 3
+        },
+        {
+            "id": 11,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 1
+        },
+        {
+            "id": 12,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 2
+        },
+        {
+            "id": 13,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 14,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 2
+        },
+        {
+            "id": 15,
+            "maxRating": 4,
+            "minRating": 2,
+            "meanRating": 3,
+            "visitCount": 2
+        },
+        {
+            "id": 16,
+            "maxRating": 4,
+            "minRating": 3,
+            "meanRating": 3.5,
+            "visitCount": 2
+        },
+        {
+            "id": 17,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 18,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 19,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 20,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 3
+        },
+        {
+            "id": 21,
+            "maxRating": 5,
+            "minRating": 4,
+            "meanRating": 4.5,
+            "visitCount": 5
+        },
+        {
+            "id": 22,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 2
+        },
+        {
+            "id": 23,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 24,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 25,
+            "maxRating": 5,
+            "minRating": 4,
+            "meanRating": 4.5,
+            "visitCount": 5
+        },
+        {
+            "id": 26,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 27,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 28,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 3
+        },
+        {
+            "id": 29,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 3
+        },
+        {
+            "id": 30,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 31,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 2
+        },
+        {
+            "id": 32,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 33,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 34,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 35,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 36,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 4
+        },
+        {
+            "id": 37,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 38,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 39,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 2
+        },
+        {
+            "id": 40,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 41,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 2
+        },
+        {
+            "id": 42,
+            "maxRating": 5,
+            "minRating": 4,
+            "meanRating": 4.5,
+            "visitCount": 3
+        },
+        {
+            "id": 43,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 2
+        },
+        {
+            "id": 44,
+            "maxRating": 5,
+            "minRating": 4,
+            "meanRating": 4.6,
+            "visitCount": 8
+        },
+        {
+            "id": 45,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 46,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 47,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 4
+        },
+        {
+            "id": 48,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 49,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 2
+        },
+        {
+            "id": 50,
+            "maxRating": 2,
+            "minRating": 2,
+            "meanRating": 2,
+            "visitCount": 1
+        },
+        {
+            "id": 51,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 52,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 53,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 3
+        },
+        {
+            "id": 54,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 55,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 1
+        },
+        {
+            "id": 56,
+            "maxRating": 4,
+            "minRating": 3,
+            "meanRating": 3.5,
+            "visitCount": 2
+        },
+        {
+            "id": 57,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 58,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 2
+        },
+        {
+            "id": 59,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 60,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 61,
+            "maxRating": 3,
+            "minRating": 2,
+            "meanRating": 2.5,
+            "visitCount": 4
+        },
+        {
+            "id": 62,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 63,
+            "maxRating": 5,
+            "minRating": 5,
+            "meanRating": 5,
+            "visitCount": 2
+        },
+        {
+            "id": 64,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 2
+        },
+        {
+            "id": 65,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 66,
+            "maxRating": 2,
+            "minRating": 2,
+            "meanRating": 2,
+            "visitCount": 3
+        },
+        {
+            "id": 67,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 68,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 69,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 70,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 71,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 72,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 73,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 74,
+            "maxRating": 5,
+            "minRating": 2,
+            "meanRating": 3.3333333333333335,
+            "visitCount": 5
+        },
+        {
+            "id": 75,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 76,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 5
+        },
+        {
+            "id": 77,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 78,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 4
+        },
+        {
+            "id": 79,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 2
+        },
+        {
+            "id": 80,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 81,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 82,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 2
+        },
+        {
+            "id": 83,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 84,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 85,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 86,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 87,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 88,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 89,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 2
+        },
+        {
+            "id": 90,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 91,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 92,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 93,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 94,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 2
+        },
+        {
+            "id": 95,
+            "maxRating": 5,
+            "minRating": 4,
+            "meanRating": 4.333333333333333,
+            "visitCount": 5
+        },
+        {
+            "id": 96,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 97,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 98,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 99,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 100,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 101,
+            "maxRating": 3,
+            "minRating": 2,
+            "meanRating": 2.6666666666666665,
+            "visitCount": 4
+        },
+        {
+            "id": 102,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 103,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 104,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 2
+        },
+        {
+            "id": 105,
+            "maxRating": 2,
+            "minRating": 2,
+            "meanRating": 2,
+            "visitCount": 3
+        },
+        {
+            "id": 106,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 107,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 2
+        },
+        {
+            "id": 108,
+            "maxRating": 5,
+            "minRating": 4,
+            "meanRating": 4.333333333333333,
+            "visitCount": 4
+        },
+        {
+            "id": 109,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 110,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 6
+        },
+        {
+            "id": 111,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 2
+        },
+        {
+            "id": 112,
+            "maxRating": 2,
+            "minRating": 2,
+            "meanRating": 2,
+            "visitCount": 4
+        },
+        {
+            "id": 113,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 2
+        },
+        {
+            "id": 114,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 115,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 116,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 117,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 118,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 2
+        },
+        {
+            "id": 119,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 120,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 121,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 2
+        },
+        {
+            "id": 122,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 3
+        },
+        {
+            "id": 123,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 124,
+            "maxRating": 5,
+            "minRating": 3,
+            "meanRating": 4,
+            "visitCount": 6
+        },
+        {
+            "id": 125,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 126,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 1
+        },
+        {
+            "id": 127,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 128,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 129,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 130,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 131,
+            "maxRating": 2,
+            "minRating": 1,
+            "meanRating": 1.5,
+            "visitCount": 6
+        },
+        {
+            "id": 132,
+            "maxRating": 5,
+            "minRating": 5,
+            "meanRating": 5,
+            "visitCount": 3
+        },
+        {
+            "id": 133,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 134,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 135,
+            "maxRating": 5,
+            "minRating": 4,
+            "meanRating": 4.5,
+            "visitCount": 3
+        },
+        {
+            "id": 136,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 137,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 2
+        },
+        {
+            "id": 138,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 139,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 140,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 141,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 2
+        },
+        {
+            "id": 142,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 143,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 144,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 145,
+            "maxRating": 2,
+            "minRating": 2,
+            "meanRating": 2,
+            "visitCount": 3
+        },
+        {
+            "id": 146,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 147,
+            "maxRating": 5,
+            "minRating": 5,
+            "meanRating": 5,
+            "visitCount": 2
+        },
+        {
+            "id": 148,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 149,
+            "maxRating": 1,
+            "minRating": 1,
+            "meanRating": 1,
+            "visitCount": 2
+        },
+        {
+            "id": 150,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 151,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 2
+        },
+        {
+            "id": 152,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 153,
+            "maxRating": 4,
+            "minRating": 3,
+            "meanRating": 3.5,
+            "visitCount": 2
+        },
+        {
+            "id": 154,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 3
+        },
+        {
+            "id": 155,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 156,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 157,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 3
+        },
+        {
+            "id": 158,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 159,
+            "maxRating": 5,
+            "minRating": 5,
+            "meanRating": 5,
+            "visitCount": 1
+        },
+        {
+            "id": 160,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 161,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 2
+        },
+        {
+            "id": 162,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 163,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 164,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 165,
+            "maxRating": 2,
+            "minRating": 2,
+            "meanRating": 2,
+            "visitCount": 3
+        },
+        {
+            "id": 166,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 167,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 168,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 169,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 170,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 171,
+            "maxRating": 5,
+            "minRating": 2,
+            "meanRating": 3.6666666666666665,
+            "visitCount": 3
+        },
+        {
+            "id": 172,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 3
+        },
+        {
+            "id": 173,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 174,
+            "maxRating": 4,
+            "minRating": 4,
+            "meanRating": 4,
+            "visitCount": 2
+        },
+        {
+            "id": 175,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 176,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 177,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 178,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 3
+        },
+        {
+            "id": 179,
+            "maxRating": 5,
+            "minRating": 5,
+            "meanRating": 5,
+            "visitCount": 2
+        },
+        {
+            "id": 180,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 181,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 182,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 183,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 2
+        },
+        {
+            "id": 184,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 185,
+            "maxRating": 3,
+            "minRating": 3,
+            "meanRating": 3,
+            "visitCount": 2
+        },
+        {
+            "id": 186,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 187,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 188,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 189,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 190,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 1
+        },
+        {
+            "id": 191,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        },
+        {
+            "id": 192,
+            "maxRating": 0,
+            "minRating": 0,
+            "meanRating": 0,
+            "visitCount": 0
+        }
+    ]
+}

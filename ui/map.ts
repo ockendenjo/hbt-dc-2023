@@ -8,12 +8,13 @@ import {fromLonLat} from "ol/proj";
 import {defaults as defaultControls} from "ol/control";
 import VectorSource from "ol/source/Vector";
 import VectorLayer from "ol/layer/Vector";
-import {Pub, PubData, PubFile, Tab} from "./ts/types";
+import {CombinedDataFile, CombinedPub, Pub, PubData, PubFile, Tab} from "./ts/types";
 import {StorageService} from "./ts/StorageService";
 import {getFirstVisitText} from "./ts/first-visit";
 import {LayerDef} from "./ts/layerDef";
 import {MyUnvisitedLayer} from "./ts/MyUnvisitedLayer";
 import {HBTUnvisitedLayer} from "./ts/HBTUnvisitedLayer";
+import {HBTRatingLayer} from "./ts/HBTRatingLayer";
 
 document.addEventListener("DOMContentLoaded", () => {
     const osmLayer = new TileLayer({
@@ -35,6 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
             descText: "Brown dots are unvisited",
             visible: false,
             setupRenderer: (source) => new HBTUnvisitedLayer(source),
+        },
+        {
+            id: "score",
+            selectText: "HBT pubs - rating",
+            descText: "Updated once per day",
+            visible: false,
+            setupRenderer: (source) => new HBTRatingLayer(source),
         },
     ];
 
@@ -108,15 +116,21 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     }
 
+    function loadStats(): Promise<CombinedPub[]> {
+        return fetch("aggregate.json")
+            .then((r) => r.json())
+            .then((j: CombinedDataFile) => j.pubs);
+    }
+
     function loadGrid(): Promise<number[][]> {
         return fetch("grid.json").then((r) => r.json());
     }
 
     function loadData() {
-        Promise.all([loadPubs(), loadGrid()]).then(([pubs, grid]) => {
+        Promise.all([loadPubs(), loadGrid(), loadStats()]).then(([pubs, grid, stats]) => {
             buildGrid(pubs, grid);
             buildList(pubs);
-            buildMap(pubs);
+            buildMap(pubs, stats);
             stylePubs(pubs);
         });
     }
@@ -169,11 +183,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("table-container").append(table);
     }
 
-    function buildMap(pubs: PubData[]) {
+    function buildMap(pubs: PubData[], stats: CombinedPub[]) {
         layerDefs.forEach((ld) => {
             const renderer = ld.setupRenderer(ld.source);
             ld.renderer = renderer;
-            renderer.render(pubs);
+            renderer.render(pubs, stats);
         });
     }
 
