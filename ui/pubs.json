@@ -21,14 +21,16 @@
             "lat": 55.94951,
             "lon": -3.18795,
             "name": "The Advocate",
-            "address": "7 Hunter Square, EH1 1QW"
+            "address": "7 Hunter Square, EH1 1QW",
+            "visited": true
         },
         {
             "id": 4,
             "lat": 55.95016,
             "lon": -3.18843,
             "name": "The Albanach",
-            "address": "197 High Street, EH1 1PE"
+            "address": "197 High Street, EH1 1PE",
+            "visited": true
         },
         {
             "id": 5,
@@ -347,7 +349,8 @@
             "lat": 55.90425,
             "lon": -3.20700,
             "name": "Charwood Restaurant & Bar",
-            "address": "47 Buckstone Terrace, EH10 6QJ"
+            "address": "47 Buckstone Terrace, EH10 6QJ",
+            "visited": true
         },
         {
             "id": 47,
@@ -648,7 +651,8 @@
             "lat": 55.95093,
             "lon": -3.19078,
             "name": "Hebrides Market Street",
-            "address": "17 Market Street, EH1 1DE"
+            "address": "17 Market Street, EH1 1DE",
+            "visited": true
         },
         {
             "id": 86,
@@ -884,7 +888,8 @@
             "lat": 55.950421,
             "lon": -3.186427,
             "name": "The Mitre",
-            "address": "131 High Street, EH1 1SG"
+            "address": "131 High Street, EH1 1SG",
+            "visited": true
         },
         {
             "id": 117,
@@ -936,7 +941,8 @@
             "lat": 55.980016,
             "lon": -3.204311,
             "name": "Old Chain Pier",
-            "address": "32 Trinity Crescent, EH5 3ED"
+            "address": "32 Trinity Crescent, EH5 3ED",
+            "visited": true
         },
         {
             "id": 124,
@@ -1078,7 +1084,8 @@
             "lat": 55.9481,
             "lon": -3.1853,
             "name": "The Royal Oak",
-            "address": "1 Infirmary Street, EH1 1LT"
+            "address": "1 Infirmary Street, EH1 1LT",
+            "visited": true
         },
         {
             "id": 143,
@@ -1217,7 +1224,8 @@
             "lat": 55.953,
             "lon": -3.1992,
             "name": "The Standing Order",
-            "address": "62-66 George Street, EH2 2LR"
+            "address": "62-66 George Street, EH2 2LR",
+            "visited": true
         },
         {
             "id": 161,
@@ -1232,7 +1240,8 @@
             "lat": 55.979828,
             "lon": -3.202055,
             "name": "Starbank Inn",
-            "address": "64 Laverockbank Road, EH5 3BZ"
+            "address": "64 Laverockbank Road, EH5 3BZ",
+            "visited": true
         },
         {
             "id": 163,
@@ -1276,7 +1285,8 @@
             "lat": 55.94865,
             "lon": -3.18778,
             "name": "Stramash!",
-            "address": "207 Cowgate, EH1 1JQ"
+            "address": "207 Cowgate, EH1 1JQ",
+            "visited": true
         },
         {
             "id": 169,
@@ -1449,7 +1459,8 @@
             "lat": 55.9504,
             "lon": -3.1854,
             "name": "The World's End",
-            "address": "2-8 High Street, EH1 1TB"
+            "address": "2-8 High Street, EH1 1TB",
+            "visited": true
         },
         {
             "id": 192,
