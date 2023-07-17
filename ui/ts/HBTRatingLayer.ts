@@ -1,6 +1,6 @@
 import {RenderBase} from "./RenderBase";
 import VectorSource from "ol/source/Vector";
-import {PubStats, PubData} from "./types";
+import {PubData} from "./types";
 import {Feature} from "ol";
 import {Fill, Stroke, Style} from "ol/style";
 import CircleStyle from "ol/style/Circle";
@@ -12,7 +12,7 @@ export class HBTRatingLayer extends RenderBase {
     }
 
     setStyle(pub: PubData, feature: Feature): void {
-        const n = pub.stats.meanRating / 5;
+        const n = (pub.stats.meanRating - 1) / (5 - 1);
         if (!feature) {
             console.error(pub);
         }
