@@ -204,7 +204,8 @@
             "lat": 55.95176,
             "lon": -3.19154,
             "name": "The Booking Office",
-            "address": "17 Waverley Bridge, EH1 1BQ"
+            "address": "17 Waverley Bridge, EH1 1BQ",
+            "visited": true
         },
         {
             "id": 28,
@@ -287,7 +288,8 @@
             "lat": 55.95280,
             "lon": -3.20599,
             "name": "The Cambridge Bar",
-            "address": "20 Young Street, EH2 4JB"
+            "address": "20 Young Street, EH2 4JB",
+            "visited": true
         },
         {
             "id": 39,
@@ -644,7 +646,8 @@
             "lat": 55.94635,
             "lon": -3.21628,
             "name": "Haymarket",
-            "address": "11-14a West Maitland Street, EH12 5DS"
+            "address": "11-14a West Maitland Street, EH12 5DS",
+            "visited": true
         },
         {
             "id": 85,
@@ -659,7 +662,8 @@
             "lat": 55.94609,
             "lon": -3.21350,
             "name": "Hebrides West End",
-            "address": "185 Morrison Street, EH3 8DZ"
+            "address": "185 Morrison Street, EH3 8DZ",
+            "visited": true
         },
         {
             "id": 87,
@@ -1383,7 +1387,8 @@
             "lat": 55.950867,
             "lon": -3.207927,
             "name": "Whighams Wine Cellars",
-            "address": "13 Hope Street, EH2 4EL"
+            "address": "13 Hope Street, EH2 4EL",
+            "visited": true
         },
         {
             "id": 182,
