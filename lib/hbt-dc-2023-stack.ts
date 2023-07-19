@@ -94,6 +94,7 @@ export class HbtDc2023Stack extends cdk.Stack {
             },
             additionalBehaviors: {
                 "pubs.json": noCacheBehaviour,
+                "aggregate.json": noCacheBehaviour,
                 "upload/*": uploadBehaviour,
             },
             priceClass: PriceClass.PRICE_CLASS_100,
