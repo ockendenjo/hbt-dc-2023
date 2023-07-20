@@ -37,7 +37,8 @@
             "lat": 55.95200,
             "lon": -3.20538,
             "name": "The Alexander Graham Bell",
-            "address": "126-128 George Street, EH2 4JZ"
+            "address": "126-128 George Street, EH2 4JZ",
+            "visited": true
         },
         {
             "id": 6,
@@ -453,14 +454,16 @@
             "lat": 55.95094,
             "lon": -3.19068,
             "name": "The Doric",
-            "address": "15-16 Market Street, EH1 1DE"
+            "address": "15-16 Market Street, EH1 1DE",
+            "visited": true
         },
         {
             "id": 60,
             "lat": 55.97893,
             "lon": -3.18660,
             "name": "Dreadnought",
-            "address": "72 North Fort Street, EH6 4HL"
+            "address": "72 North Fort Street, EH6 4HL",
+            "visited": true
         },
         {
             "id": 61,
@@ -922,7 +925,8 @@
             "lat": 55.950686,
             "lon": -3.184406,
             "name": "No. 1 High Street",
-            "address": "1 Jeffrey Street, EH1 1SR"
+            "address": "1 Jeffrey Street, EH1 1SR",
+            "visited": true
         },
         {
             "id": 121,
