@@ -48,4 +48,7 @@ export type PubStats = {
     minRating: number;
     maxRating: number;
     meanRating: number;
+    ratingCount: number;
+    points: number[];
+    ratings: number[];
 };

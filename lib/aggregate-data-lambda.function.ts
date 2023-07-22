@@ -17,6 +17,7 @@ export const runLogic = async (
 
     const visitMap = new Map<number, number>();
     const scoreMap = new Map<number, number[]>();
+    const pointsMap = new Map<number, number[]>();
 
     for (const s3File of objects) {
         const pubsForUser = await getS3File(s3File.Key);
@@ -28,6 +29,9 @@ export const runLogic = async (
             }
             if (p.points) {
                 visitMap.set(p.id, (visitMap.get(p.id) || 0) + 1);
+                const points = pointsMap.get(p.id) || [];
+                points.push(p.points);
+                pointsMap.set(p.id, points);
             }
         }
     }
@@ -38,16 +42,27 @@ export const runLogic = async (
         let min = 0;
         let max = 0;
         let mean = 0;
+        let ratings: number[] = [];
+        let points = pointsMap.get(i) || [];
 
         if (scoreMap.has(i)) {
-            const scores = scoreMap.get(i) as number[];
-            min = Math.min(...scores);
-            max = Math.max(...scores);
-            mean = scores.reduce((a, v) => a + v) / scores.length;
+            ratings = scoreMap.get(i) as number[];
+            min = Math.min(...ratings);
+            max = Math.max(...ratings);
+            mean = ratings.reduce((a, v) => a + v) / ratings.length;
         }
         const visitCount = visitMap.get(i) || 0;
 
-        const cp: PubStats = {id: i, maxRating: max, minRating: min, meanRating: mean, visitCount};
+        const cp: PubStats = {
+            id: i,
+            maxRating: max,
+            minRating: min,
+            meanRating: mean,
+            visitCount,
+            ratings,
+            ratingCount: ratings.length,
+            points,
+        };
         combinedPubs.push(cp);
     }
 
