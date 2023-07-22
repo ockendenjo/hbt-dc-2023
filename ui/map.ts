@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function setPubStyles(pub: PubData) {
-        const className = getCellClassName(pub.points, pub.formDone, pub.visited);
+        const className = getCellClassName(pub);
         if (pub.gridCell) {
             pub.gridCell.className = className;
         }
@@ -271,14 +271,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function getCellClassName(points: number, formDone: boolean, visited: boolean): string {
-        const pointsClassName = getPointsClassName(points);
-        const doneClassName = formDone ? "submitted" : "";
-        const visitedClassName = visited ? "visited" : "";
+    function getCellClassName(pub: PubData): string {
+        const pointsClassName = getPointsClassName(pub);
+        const doneClassName = pub.formDone ? "submitted" : "";
+        const visitedClassName = pub.visited ? "visited" : "";
         return [pointsClassName, doneClassName, visitedClassName].filter((s) => s).join(" ");
     }
 
-    function getPointsClassName(points: number): string {
+    function getPointsClassName(pub: PubData): string {
+        const points = pub.points;
+
         switch (points) {
             case 1:
                 return "visit-ok";
@@ -286,15 +288,50 @@ document.addEventListener("DOMContentLoaded", () => {
                 return "visit-good";
             case -1:
                 return "visit-bad";
+        }
+
+        let className = "";
+        switch (points) {
             case -2:
                 return "novisit-bad";
             case 2:
                 return "novisit-ok";
             case 4:
                 return "novisit-good";
-            default:
-                return "";
         }
+
+        if (pub.stats.points.length) {
+            const pointsMap = new Map<number, number>();
+            pub.stats.points.forEach((p) => {
+                pointsMap.set(p, (pointsMap.get(p) || 0) + 1);
+            });
+
+            let max = 0;
+            for (const v of pointsMap.values()) {
+                max = Math.max(max, v);
+            }
+
+            let maxPoints = -10;
+            for (const k of pointsMap.keys()) {
+                if (pointsMap.get(k) === max) {
+                    maxPoints = Math.max(maxPoints, k);
+                }
+            }
+
+            switch (maxPoints) {
+                case -1:
+                    className = "novisit-bad";
+                    break;
+                case 1:
+                    className = "novisit-ok";
+                    break;
+                case 3:
+                    className = "novisit-good";
+                    break;
+            }
+        }
+
+        return className;
     }
 
     const pubTab = {
